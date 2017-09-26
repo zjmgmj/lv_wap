@@ -1,0 +1,105 @@
+/*多分辨率设定rem设定*/
+html {
+  font-size: 20px;
+}
+/*Note3*/
+@media only screen and (min-width: 360px) {
+  html {
+    font-size: 22px !important;
+  }
+}
+/*iPhone6*/
+@media only screen and (min-width: 376px) {
+  html {
+    font-size: 23px !important;
+  }
+}
+/*iPhone6 plus*/
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 25px !important;
+  }
+}
+/*big Resolution*/
+@media only screen and (min-width: 641px) {
+  html {
+    font-size: 28px !important;
+  }
+}
+html {
+  -ms-touch-action: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+body {
+  background-color: #f8f8f8;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+body {
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-size: 15px;
+  font-family: San Francisco, Helvetica, Arial, sans-serif;
+}
+input[type="radio"] {
+  -webkit-appearance: none;
+  /* 去掉radio的默认样式 */
+  display: block;
+  outline: none;
+  width: 0.8rem;
+  height: 0.8rem;
+  float: left;
+  margin-right: 0.5rem;
+  background-image: url(../images/radiobtn.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+input[type="radio"].checked {
+  background-image: url(../images/radiobtncheck.png);
+}
+div,
+ul,
+li,
+i,
+p {
+  list-style: none;
+  font-style: initial;
+}
+button {
+  background: none;
+  border: none;
+  font-family: "microsoft yahei", arial;
+}
+.border_bottom {
+  border-bottom: solid 1px #eee;
+}
+.orange {
+  color: #ffa541;
+}
+.green {
+  color: #8bc53f;
+}
+.bg_white {
+  background: #fff;
+}
+.m_top {
+  margin-top: 10px;
+}
+.f_r {
+  float: right;
+}
+.font_12 {
+  font-size: 12px;
+}
+/*# sourceMappingURL=base.css.map */

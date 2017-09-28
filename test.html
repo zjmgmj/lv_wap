@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<title>菲趣-周边游学</title>
+		<meta http-equiv="description" content="菲趣亲子游，给你一场菲趣不可的亲子旅行！菲趣亲子游官方电话：69694195" />
+		<meta http-equiv="keywords" content="菲趣亲子游，常州菲趣亲子游，常州亲子活动，亲子旅游，常州儿童 剧，菲趣官网" />
+		<!--<script src="http://www.feitrip.cn/js/jquery1.4.2.min.js"></script>-->
+		<script src="js/jquery1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/easyui.css" />
+		<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fullcalendar.js"></script>
+
+		<script type="text/javascript">
+			var date = '';
+			var year, month;
+
+			if(date != '') {
+				var dates = date.split("-");
+				year = dates[0];
+				month = dates[1];
+				day = dates[2];
+				$("#J-xl").val(date);
+				getGoodsNum(year + "-" + month + "-" + day);
+			} else {
+				year = new Date().getFullYear();
+				month = new Date().getMonth() + 1;
+				getGoodsNum(year + "-" + month + "-" + new Date().getDate());
+			}
+			var countArray = [];
+			var unit = "场";
+			var chooseDate = false;
+
+			function SelectDate(obj) {
+				chooseDate = true;
+				$(".content").empty();
+				page = 1;
+				getGoodsByDate(obj[0] + "-" + obj[1] + "-" + obj[2]);
+			}
+
+			function SelectMonth(obj) {
+
+				getGoodsNum(obj.year + "-" + obj.month + "-01")
+			}
+
+			function SelectYear(obj) {
+
+				getGoodsNum(obj.year + "-" + obj.month + "-01")
+			}
+
+			function getGoodsNum(date) {
+				$.ajax({
+					type: "post",
+					url: "data/actlist.json",//获取每天有几场活动
+					data: "date=" + date,
+					success: function(obj) {
+						countArray = obj.data;
+						if(date != "") {
+							var dt = new Date(Date.parse(date.replace(/-/g, "/")));
+							
+							//日历
+							$("#iframepage").fullCalendar({
+								year: new Date(dt).getFullYear(), //完整的年份
+								month: new Date(dt).getMonth() + 1, //当前月份
+								height: 440,
+								current: new Date(dt)
+							});
+						}
+					}
+				});
+			}
+			
+			//切换内容
+			function getGoodsByDate(date) {
+            $.ajax({
+                type: "post",
+                url: "/FActivity/SearchIndexAjax/" + date,
+                success: function (obj) {
+                    for (var i = 0; i < obj.Goods.length; i++) {
+                        var item = obj.Goods[i];
+                        var url = "/order/detail?id=" + item.Id;
+
+                        var html = '<div class="ul_wrap">' +
+                    '<ul class="ui-grid-halve ui-grid-halve2">' +
+                            '<a href="' + url + '">' +
+                                '<li>' +
+                                    '<div class="ui-grid" style="background:url(' + item.GoodsURL + ') no-repeat center top;background-size:100% 100%;">' +
+                                        '<div class="ui-grid-halve-info">' +
+                                            '<span>累计报名人数:' + (item.SellNum == null ? '0' : item.SellNum) + ' 人</span>' +
+                                        '</div>' +
+                                        '<div class="money_img">￥' + item.RPrice + '起</div>' +
+                                    '</div>' +
+                                    '<p>' + item.Name + '</p>' +
+                                    '<div class="ui-grid-label">';
+
+                        if (item.TabDetaiL != null && item.TabDetaiL != "") {
+                            var labels = item.TabDetaiL.split(',');
+                            for (var j = 0; j < labels.length; j++) {
+                                html += '<label>' + labels[j] + '</label>';
+                            }
+                        }
+                        html += '</div>' +
+                                         '</li>' +
+                                     '</a>' +
+                                 '</ul>' +
+                             '</div>';
+                        $(".content").append(html);
+                    }
+
+                },
+                error: function () {
+                }
+            });
+        }
+			
+		</script>
+
+	</head>
+
+	<body>
+
+		 <div class="addMemo" id="iframe">
+            <div class="calendarTime">
+                <input type="text" value="出游日历" readonly id="J-xl" class="dateTime" />
+                <i class="icon iconfont iconRili">&#xe601;</i>
+                <i class="icon iconfont iconDrop">&#xe68d;</i>
+            </div>
+            <div id="iframepage">
+                <div region="center" style="height:440px;">
+                    <div class="easyui-fullCalendar" style="overflow: hidden;height: 440px;" fit="true" id="calendar"></div>
+                </div>
+            </div>
+        </div>
+		<div class="content mb10">
+        
+   		 </div>
+	</body>
+
+</html>

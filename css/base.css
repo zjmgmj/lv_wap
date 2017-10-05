@@ -120,4 +120,9 @@ button {
 .green_btn {
   background-color: #2b9855;
 }
+.content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 .5rem;
+}
 /*# sourceMappingURL=base.css.map */

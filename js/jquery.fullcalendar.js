@@ -584,17 +584,17 @@
                 '<a class="calendar-title">' +
                 '<span>Aprial 2010</span>' +
                 '</a>' +*/
-                '<a class="calendar-prevyear"><i class="icon iconfont">\<</i></a>' +
+                '<a class="calendar-prevyear"><i class="icon iconfont icon-jiantou"></i></a>' +
                 '&nbsp;' +
                 '<a class="calendar-year"></a>' +
                 '&nbsp;' +
-                '<a class="calendar-nextyear"><i class="icon iconfont">\></i></a>' +
+                '<a class="calendar-nextyear"><i class="icon iconfont icon-202"></i></a>' +
                 '&nbsp;' +
-                '<a class="calendar-prevmonth"><i class="icon iconfont">&#xe623;</i></a>' +
+                '<a class="calendar-prevmonth"><i class="icon iconfont icon-jiantou"></i></a>' +
                 '&nbsp;' +
                 '<a class="calendar-month"></a>' +
                 '&nbsp;' +
-                '<a class="calendar-nextmonth"><i class="icon iconfont">&#xe600;</i></a>' +
+                '<a class="calendar-nextmonth"><i class="icon iconfont icon-202"></i></a>' +
                 '<a class="calendar-title">' +
                 '<span>Aprial 2010</span>' +
                 '</a>' +

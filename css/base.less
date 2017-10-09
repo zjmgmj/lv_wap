@@ -126,3 +126,60 @@ button {
     box-sizing: border-box;
     padding: 0 .5rem;
 }
+/* 日历时间 */
+
+.calendarTime {
+    position: relative;
+    margin: 10px auto;
+    width: 60%;
+    overflow: hidden;
+    background: rgba(6, 193, 174, 1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.dateTime {
+    width: 98%;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    background: none;
+    /*background:url(../Assets/images/dataTime2.png) no-repeat right center;*/
+}
+
+.calendarTime img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.calendarTime i {
+    position: absolute;
+    top: 0;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.calendarTime i.iconRili {
+    left: 8px;
+    font-size: 20px;
+}
+
+.calendarTime i.iconDrop {
+    right: 8px;
+}
+
+.addMemo {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+    top: 2rem;
+}

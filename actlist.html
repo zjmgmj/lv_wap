@@ -9,6 +9,7 @@
 		<meta content="yes" name="apple-mobile-web-app-capable">
 		<meta content="black" name="apple-mobile-web-app-status-bar-style">
 		<meta content="telephone=no" name="format-detection">
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<link rel="stylesheet" type="text/css" href="css/header.css" />
 		<link rel="stylesheet" type="text/css" href="css/actlist.css" />
@@ -16,93 +17,9 @@
 		<link rel="stylesheet" type="text/css" href="css/easyui.css" />
 
 		<script src="js/jquery1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
-
 		<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fullcalendar.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				var iframe = $("#iframepage").hide();
-				$(".calendarTime").click(function() {
-					if(iframe.is(':hidden')) {
-						iframe.fadeIn();
-					} else {
-						iframe.fadeOut();
-					}
-				});
-
-				var date = '';
-				var year, month;
-				if(date != '') {
-					var dates = date.split("-");
-					year = dates[0];
-					month = dates[1];
-					day = dates[2];
-					$("#J-xl").val(date);
-					getGoodsNum(year + "-" + month + "-" + day);
-				} else {
-					year = new Date().getFullYear();
-					month = new Date().getMonth() + 1;
-					getGoodsNum(year + "-" + month + "-" + new Date().getDate());
-				}
-			});
-
-			var countArray = [];
-			var unit = "场";
-			var chooseDate = false;
-
-			function SelectDate(obj) {
-				chooseDate = true;
-				$(".content").empty();
-				page = 1;
-				getGoodsByDate(obj[0] + "-" + obj[1] + "-" + obj[2]);
-			}
-
-			function SelectMonth(obj) {
-
-				getGoodsNum(obj.year + "-" + obj.month + "-01")
-			}
-
-			function SelectYear(obj) {
-
-				getGoodsNum(obj.year + "-" + obj.month + "-01")
-			}
-
-			function getGoodsNum(date) {
-				$.ajax({
-					type: "post",
-					url: "data/actlist.json", //获取每天有几场活动
-					data: "date=" + date,
-					success: function(obj) {
-						countArray = obj.data;
-						if(date != "") {
-							var dt = new Date(Date.parse(date.replace(/-/g, "/")));
-
-							//日历
-							$("#iframepage").fullCalendar({
-								year: new Date(dt).getFullYear(), //完整的年份
-								month: new Date(dt).getMonth() + 1, //当前月份
-								height: 440,
-								current: new Date(dt)
-							});
-						}
-					}
-				});
-			}
-
-			//切换内容
-			function getGoodsByDate(date) {
-				$.ajax({
-					type: "post",
-					url: "" + date,
-					success: function(obj) {
-						var html = '';
-						$(".content").append(html);
-
-					},
-					error: function() {}
-				});
-			}
-		</script>
+		<script src="js/actlist_schedule.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
@@ -119,8 +36,8 @@
 		<div class="addMemo" id="iframe">
 			<div class="calendarTime">
 				<input type="text" value="出游日历" readonly id="J-xl" class="dateTime" />
-				<i class="icon iconfont iconRili">&#xe601;</i>
-				<i class="icon iconfont iconDrop">&#xe68d;</i>
+				<i class="icon iconfont iconRili icon-calendar"></i>
+				<i class="icon iconfont iconDrop icon-jiantou-copy-copy-copy"></i>
 			</div>
 			<div id="iframepage">
 				<div region="center" style="height:440px;">

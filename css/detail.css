@@ -135,6 +135,59 @@
 .detail_hotel ul:last-child {
   border-bottom: none;
 }
+.organizers .organizers_c {
+  box-sizing: border-box;
+  padding-top: .5rem;
+  background: url(../images/graymore.png) no-repeat right center;
+  background-size: .4rem;
+}
+.organizers .organizers_c img {
+  width: 3rem;
+  float: left;
+  display: block;
+}
+.organizers .organizers_c:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.organizers .organizers_z {
+  width: 12rem;
+  box-sizing: border-box;
+  padding-top: 1rem;
+  padding-left: .3rem;
+  float: left;
+}
+.organizers .organizers_z h4 {
+  font-size: .6rem;
+  color: #333;
+}
+.organizers .organizers_z p {
+  font-size: .2rem;
+}
+.organizers .organizers_z .parameter {
+  margin-top: .2rem;
+  font-size: .3rem;
+}
+.organizers .organizers_z .parameter i {
+  display: block;
+}
+.organizers .organizers_z .parameter .parblock {
+  width: 3.5rem;
+  float: left;
+  text-align: center;
+}
+.organizers .organizers_z .parameter .parnum {
+  color: #8bc53f;
+  font-size: .5rem;
+  font-weight: bold;
+  margin-top: .2rem;
+}
+.organizers .organizers_z .parameter:after {
+  clear: both;
+  content: '';
+  display: block;
+}
 .detail_foot {
   height: 2.6rem;
   position: fixed;
@@ -162,4 +215,116 @@
   color: #fff;
   width: 50%;
 }
-/*# sourceMappingURL=detail.css.map */
+.detail_menu {
+  width: 100%;
+  border-bottom: 1px solid #eeeeee;
+}
+.detail_menu ul:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.detail_menu li {
+  text-align: center;
+  float: left;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  width: 50%;
+}
+.detail_menu li.active {
+  color: #8bc53f;
+  border-bottom: .1rem solid #8bc53f;
+}
+.details_content {
+  padding-top: .5rem;
+  font-size: .5rem;
+  line-height: 1rem;
+}
+.details_content img {
+  width: 100%;
+}
+.score {
+  display: none;
+}
+.score .score_top {
+  border-bottom: .01rem solid #eeeeee;
+  text-align: center;
+  padding: .3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.score .score_top span {
+  padding: 0 .2rem;
+}
+.score .score_top img {
+  width: 1rem;
+}
+.score .score_content {
+  padding-top: .5rem;
+  box-sizing: border-box;
+}
+.score .score_content .score_content_h {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.score .score_content .score_content_h .score_content_img {
+  width: 2.2rem;
+}
+.score .score_content .score_content_h .score_content_img img {
+  width: 2.2rem;
+  border-radius: 100%;
+}
+.score .score_content .score_content_h h3 {
+  width: 7rem;
+  font-size: .6rem;
+}
+.score .score_content .score_content_h h3 .gender {
+  width: 1rem;
+  border-radius: .3rem;
+  padding: .1rem .3rem;
+  background: #ff931b;
+  font-size: .3rem;
+  color: #fff;
+}
+.score .score_content .score_content_h .score_icon_img img {
+  width: 1rem;
+}
+.score .score_content .score_content_h:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.score .score_content .score_conten_detail {
+  box-sizing: border-box;
+  padding-left: 2.3rem;
+}
+.score .score_content .score_conten_detail .time {
+  font-size: .3rem;
+  color: #999;
+}
+.score .score_content .score_conten_detail .score_d p {
+  line-height: 1rem;
+  color: #666;
+}
+.score .score_content .score_conten_detail .score_d .score_d_img img {
+  width: 4rem;
+  padding: .1rem;
+}
+.score .score_content .score_conten_detail .score_d .score_d_bottom {
+  font-size: .3rem;
+  color: #999;
+}
+.score .score_content .score_conten_detail .score_d .score_d_bottom ul {
+  align-items: center;
+}
+.score .score_content .score_conten_detail .score_d .score_d_bottom .great_icon {
+  vertical-align: middle;
+}
+.score .score_content .score_conten_detail .score_d .score_d_bottom .great_icon img {
+  width: .8rem;
+}
+.score .score_content .score_conten_detail .score_d .score_d_bottom .great_icon span {
+  padding: 0 .2rem;
+}

@@ -11,7 +11,7 @@ $(document).ready(function() {
 		$(this).addClass('active');
 		$('#details').removeClass('active');
 	});
-	/*$('.score_d_img img').on('click', function() {
+	$('.score_d_img img').bind('click', function() {
 		var thisImg = $(this).parent();
 		var index_num = $(this).index();
 		var lengthNum = thisImg.find('img').length;
@@ -28,14 +28,18 @@ $(document).ready(function() {
 				picHtml = picHtml + '<div class="swiper-slide"><img src=\"' + imgMaxPath + '\" /></div>';
 			}
 		}
-		picHtml = '<div class="swiper-container"><div class="swiper-wrapper">'+picHtml + picHtmlmin+'</div></div>';
+		picHtml = '<div class="swiper-container"><div class="swiper-wrapper">' + picHtml + picHtmlmin + '</div></div>';
 		$('.pic_show').html(picHtml);
 		var swiper = new Swiper('.swiper-container', {
 			pagination: '.swiper-pagination',
-			initialSlide:0,
-			updateFormElements:true,
+			initialSlide: 0,
+			updateFormElements: true,
 			paginationClickable: true
 		});
 		return false;
-	});*/
+	});
+	$('.pic_show').bind('click', function() {
+
+		$('.pic_show').hide();
+	});
 })

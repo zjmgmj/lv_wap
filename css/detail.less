@@ -411,3 +411,64 @@
 .swiper-slide {
     background: 0
 }
+//.detail_foot{
+//	display: none;
+//}
+.buy_check{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+	.buy_check_content{
+		width: 100%;
+		background: #fff;
+		position: absolute;
+		bottom: 0;
+		.buy_check_content_ul{
+			position: relative;
+			height: 3rem;
+			box-sizing: border-box;
+			border-bottom: 1px #ddd solid;
+			.buy_check_content_l{
+				padding: .5rem 0;
+				.subtit{
+					margin-top: .3rem;
+				}
+				.f24{
+					font-size: .3rem;
+					color: #999;
+				}
+			}
+			.buy_check_content_r{
+				position: absolute;
+				right: 0;
+				top: 1.2rem;
+				.mm{
+					font-size: .3rem;
+					.money{
+						font-size: .7rem;
+						color: #f75934;
+					}
+				}
+			}
+		}
+	}
+	.buy_back{
+		height: 1.8rem;
+		text-align: center;
+		line-height: 1.8rem;
+		font-size: .5rem;
+		img{
+			padding-right: .3rem;
+			width: .4rem;
+			vertical-align: middle;
+		}
+		span{
+			vertical-align: middle;
+		}
+	}
+}

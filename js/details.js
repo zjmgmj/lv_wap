@@ -11,6 +11,8 @@ $(document).ready(function() {
 		$(this).addClass('active');
 		$('#details').removeClass('active');
 	});
+	
+	//评价图片放大切换
 	$('.score_d_img img').bind('click', function() {
 		var thisImg = $(this).parent();
 		var index_num = $(this).index();
@@ -39,7 +41,15 @@ $(document).ready(function() {
 		return false;
 	});
 	$('.pic_show').bind('click', function() {
-
 		$('.pic_show').hide();
+	});
+	/*end*/
+	
+	
+	$('#buy_btn').click(function(){
+		$('.buy_check').show();
+	});
+	$('.buy_back').click(function(){
+		$('.buy_check').hide();
 	});
 })

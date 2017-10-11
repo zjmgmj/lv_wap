@@ -9,9 +9,13 @@
 		<meta content="yes" name="apple-mobile-web-app-capable">
 		<meta content="black" name="apple-mobile-web-app-status-bar-style">
 		<meta content="telephone=no" name="format-detection">
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<link rel="stylesheet" type="text/css" href="css/info.css" />
-		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<!--<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/jquery1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/info.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
@@ -48,11 +52,111 @@
 				<form method="#">
 					<h1>参加本次活动的人员</h1>
 					<div class="lessnum">您还需选择<i>4</i>位参与者</div>
+					<div class="contract_info_c ok_info">
+						<ul>
+							<li class="contract_info_c_list ">
+								<span class="name"><i class="icon iconfont icon-geren"></i>gmj</span>
+								<span class="name_status">成人</span>
+								<span class="contract_edit"><i class="icon iconfont icon-bianji"></i>编辑</span>
+								<i class="icon iconfont icon-gou icon_p"></i>
+							</li>
+							<li class="contract_info_c_toggle">
+								<div class="classify">
+									<span class="classify_text">分类</span>
+									<span class="adult">
+										<input type="radio" id="adult" name="classify" /><label for="adult">成人</label>
+									</span>
+									<span class="children">
+										<input type="radio" id="child" class="checked" name="classify " /><label for="child">儿童</label>
+									</span>
+								</div>
+								<div class="namephone">
+									<span class="edit_input">姓名</span>
+									<span><input type="text" name="username" placeholder="请填写小孩的真实姓名" /></span>
+								</div>
+								<div class="namephone">
+									<span class="edit_input">身份证</span>
+									<span><input type="text" name="telphone" placeholder="请填写小孩的身份证号码" /></span>
+								</div>
+								<div class="submit_btn">
+									<button class="btn default_btn">取消</button>
+									<button class="btn green_btn">确定</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="contract_info_c ok_info">
+						<ul>
+							<li class="contract_info_c_list ">
+								<span class="name"><i class="icon iconfont icon-geren"></i>gmj</span>
+								<span class="name_status">成人</span>
+								<span class="contract_edit"><i class="icon iconfont icon-bianji"></i>编辑</span>
+								<i class="icon iconfont icon-gou icon_p"></i>
+							</li>
+							<li class="contract_info_c_toggle">
+								<div class="classify">
+									<span class="classify_text">分类</span>
+									<span class="adult">
+										<input type="radio" id="adult" name="classify" /><label for="adult">成人</label>
+									</span>
+									<span class="children">
+										<input type="radio" id="child" class="checked" name="classify " /><label for="child">儿童</label>
+									</span>
+								</div>
+								<div class="namephone">
+									<span class="edit_input">姓名</span>
+									<span><input type="text" name="username" placeholder="请填写小孩的真实姓名" /></span>
+								</div>
+								<div class="namephone">
+									<span class="edit_input">身份证</span>
+									<span><input type="text" name="telphone" placeholder="请填写小孩的身份证号码" /></span>
+								</div>
+								<div class="submit_btn">
+									<button class="btn default_btn">取消</button>
+									<button class="btn green_btn">确定</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="contract_info_c">
+						<ul>
+							<li class="contract_info_c_list">
+								<span class="name"><i class="icon iconfont icon-geren"></i>游客</span>
+								<span class="name_status">成人</span>
+								<span class="contract_edit"><i class="icon iconfont icon-bianji"></i>编辑</span>
+								<i class="icon iconfont icon-jia icon_p"></i>
+							</li>
+							<li class="contract_info_c_toggle">
+								<div class="classify">
+									<span class="classify_text">分类</span>
+									<span class="adult">
+										<input type="radio" id="adult" name="classify" /><label for="adult">成人</label>
+									</span>
+									<span class="children">
+										<input type="radio" id="child" class="checked" name="classify " /><label for="child">儿童</label>
+									</span>
+								</div>
+								<div class="namephone">
+									<span class="edit_input">姓名</span>
+									<span><input type="text" name="username" placeholder="请填写小孩的真实姓名" /></span>
+								</div>
+								<div class="namephone">
+									<span class="edit_input">身份证</span>
+									<span><input type="text" name="telphone" placeholder="请填写小孩的身份证号码" /></span>
+								</div>
+								<div class="submit_btn">
+									<button class="btn default_btn">取消</button>
+									<button class="btn green_btn">确定</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+
 					<div class="add_user"><img src="images/adduser.png" />添加联系人</div>
 					<div class="classify">
 						<span class="classify_text">分类</span>
 						<span class="adult">
-							<input type="radio" name="classify" />
+							<input type="radio" name="classify" class="checked" />
 							<label for="">成人</label>
 						</span>
 						<span class="children">

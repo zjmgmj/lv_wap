@@ -392,6 +392,7 @@
 }
 .buy_check .buy_check_content .buy_check_content_ul .buy_check_content_l {
   padding: .5rem 0;
+  color: #666;
 }
 .buy_check .buy_check_content .buy_check_content_ul .buy_check_content_l .subtit {
   margin-top: .3rem;

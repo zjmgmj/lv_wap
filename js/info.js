@@ -6,4 +6,4 @@ $(document).ready(function() {
 		$(this).parents('.classify').find('.check_radio').removeClass("checked");
 		$(this).addClass("checked");
 	});
-})
+});

@@ -2,7 +2,7 @@ $(function(){
 	$(".form-group").on("click",function(){
 		$(".form-group input").removeClass("checked");
 		$(this).find("input").addClass("checked");
-	})
+	});
 	var num=parseInt($(".order_val").val());
 	var price=$(".order_price i").text();
 	var total=price*num;

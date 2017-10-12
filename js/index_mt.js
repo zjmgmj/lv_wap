@@ -1,6 +1,5 @@
 $(document).ready(function() {
-	//日历
-	/*var iframe = $("#iframepage").hide();
+	var iframe = $("#iframepage").hide();
 	$(".calendarTime").click(function() {
 		if(iframe.is(':hidden')) {
 			iframe.fadeIn();
@@ -22,14 +21,15 @@ $(document).ready(function() {
 		year = new Date().getFullYear();
 		month = new Date().getMonth() + 1;
 		getGoodsNum(year + "-" + month + "-" + new Date().getDate());
-	}*/
+	}
 	
 	var temp_html='<div class="recommend_list">'+
 							'<img src="images/491971db-b1e8-4e58-94ae-bfa8eb4276e3.jpg" />'+
 							'<div class="recommend_piece">'+
-								'<span class="">￥</span><span class="">5980</span><span class="">起</span>'+
+								'<p class="recommend_piece_c"><span class="font_size_m">￥</span><span class="font_size_l">5980</span><span class="font_size_m">起</span></p>'+
+								'<p class="bg_white">拼团返¥200</p>'+
 							'</div>'+
-							'<div class="recommend_num">累计报名人数：21人</div>'+
+							'<div class="recommend_num">累计419人报名</div>'+
 							'<h4 class="recommend_title">【早鸟特惠】西双版纳雨林穿梭，一起体验成长</h4>'+
 							'<p class="recommend_detail">试想 张开眼睛，前方是一棵大树直上苍天 左手摘下一片芭蕉，叶上的水珠被晃动滴在脸上 右手抓住一根古藤，听藤上的枝叶诉说雨林故事 左脚越过已经腐朽的却长满了木耳和蘑菇的树干 右脚踏上长满了绿色青苔的石头</p>'+
 							'<div class="recommend_label">'+

@@ -1,275 +1,268 @@
-.edit_info {
+.info_header {
+    width: 100%;
+    height: 2rem;
+    background-color: #FFFFFF;
+    position: relative;
+    line-height: 2rem;
+    .lefta {
+        display: block;
+        position: absolute;
+        left: 3%;
+        top: 0;
+        width: 10%;
+        color: #8bc43f;
+        font-size: 0.8rem;
+        z-index: 3;
+    }
+    .righta {
+        display: block;
+        position: absolute;
+        right: 3%;
+        top: 0;
+        width: 20%;
+        text-align: right;
+        color: #fca242;
+        font-size: 0.8rem;
+        z-index: 3;
+        i {
+            font-size: 0.6rem;
+        }
+    }
+    h1 {
+        color: #000000;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+        font-size: 0.7rem;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+    }
+}
+.acttime,
+.Tchoose {
+    width: 94%;
+    padding: 0 3%;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 0.6rem;
+    background-color: #8BC43F;
+    color: #FFFFFF;
+}
+.Tchoose {
+    padding: 0.5rem 3%;
+}
+.travel {
     width: 100%;
     height: 100%;
-    font-family: "微软雅黑";
-    .title {
-        width: 100%;
-        height: 1.8rem;
-        background-color: #fff;
-        text-align: center;
-        line-height: 1.8rem;
-        position: relative;
-        a {
-            position: absolute;
-            left: 0.5rem;
-            top: 0.5rem;
-            display: block;
-            width: 0.8rem;
-            height: 0.8rem;
-            text-align: center;
-            line-height: 0.8rem;
-            color: #333;
-            font-family: "宋体";
-            font-size: 0.8rem;
-        }
-        h1 {
-            font-weight: normal;
-            font-size: 0.7rem;
-        }
-    }
-    .act_person {
-        width: 92%;
-        padding: 0 4%;
-        height: 100%;
-        font-size: 0.56rem;
-        background-color: #8bc53f;
-        color: #fff;
-        .go_method {
-            width: 100%;
-            height: 1.6rem;
-            line-height: 1.6rem;
-            border-bottom: 1px dotted #f5f5f5;
-            position: relative;
-            i {
-                padding-right: 0.3rem;
-            }
-            span {
-                display: block;
-                width: 1rem;
-                height: 1rem;
-                line-height: 1rem;
-                position: absolute;
-                right: 0;
-                top: 0.3rem;
-                z-index: 2;
-            }
-        }
-        .date_go {
-            height: 1.6rem;
-            line-height: 1.6rem;
-            border-bottom: 1px dotted #aac1bc;
-        }
-    }
-    .contract_info {
-        width: 92%;
-        margin: 0.5rem auto;
-        height: 100%;
-        border-radius: 0.3rem;
-        overflow: hidden;
-        font-size: 0.56rem;
-        color: #fff;
-        background-color: #fff;
-        &.m_t_2r {
-            margin-bottom: 2rem;
-        }
-        h1 {
-            font-size: 0.56rem;
-            font-weight: normal;
-            padding: 0.4rem;
-            background-color: #8bc53f;
-        }
-        div {
-            background-color: #fff;
-        }
-        .lessnum {
-            height: 1.6rem;
-            line-height: 1.6rem;
-            width: 100%;
-            text-align: center;
-            color: #333;
-            i {
-                color: #e34c1b;
-                padding: 0 0.2rem;
-            }
-        }
-        .contract_info_c {
-            width: 100%;
-            border-top: 1px solid #e7e7e7;
-            padding: 0 .325rem;
-            box-sizing: border-box;
-            position: relative;
-            color: #333;
-            .contract_info_c_list {
-                height: 1.8rem;
-                line-height: 1.8rem;
-                i {
-                    padding-right: .1rem;
-                }
-                .name {
-                    font-size: .6rem;
-                }
-                .name_status {
-                    font-size: .4rem;
-                }
-                .contract_edit {
-                    padding: .1rem;
-                    border-radius: .2rem;
-                    background: rgba(0, 0, 0, 0.2);
-                    color: #fff;
-                    font-size: .2rem;
-                    .icon-bianji {
-                        font-size: .2rem;
-                    }
-                }
-                .icon_p {
-                    position: absolute;
-                    right: .325rem;
-                    top: 0;
-                }
-            }
-            &.ok_info {
-                background: #d6f6ac;
-                border-top: 1px solid #b6dc84;
-            }
-            .contract_info_c_toggle {
-                display: none;
-                padding-bottom: .8rem;
-                .border_radius {
-                    border-radius: .5rem;
-                    width: 100%;
-                    height: 8rem;
-                    overflow: hidden;
-                }
-            }
-        }
-        .add_user {
-            width: 100%;
-            height: 1.6rem;
-            line-height: 1.6rem;
-            background-color: #8bc53f;
-            text-align: center;
-            position: relative;
-            img {
-                height: 0.8rem;
-                position: absolute;
-                top: 0.4rem;
-                left: 50%;
-                margin-left: -2.6rem;
-            }
-        }
-        .classify {
-            width: 100%;
-            height: 1.6rem;
-            line-height: 1.6rem;
-            margin-top: 0.4rem;
-            border-bottom: 1px solid #e7e7e7;
-            span {
-                display: block;
-                float: left;
-                color: #333;
-            }
-            .classify_text {
-                width: 18%;
-                //border-right: 1px solid #e7e7e7;
-                box-sizing: border-box;
-                text-align: center;
-            }
-            .adult {
-                width: 30%;
-                padding-left: 2%;
-                input {
-                    margin-top: 0.3rem;
-                }
-            }
-            .children {
-                input {
-                    margin-top: 0.3rem;
-                }
-            }
-        }
-        .namephone {
-            height: 1.6rem;
-            line-height: 1.6rem;
-            border-bottom: 1px solid #e7e7e7;
-            span {
-                display: block;
-                float: left;
-                color: #333;
-                //border-bottom: 1px solid #e7e7e7;
-                width: 82%;
-                input {
-                    width: 96%;
-                    padding: 0 2%;
-                    height: 100%;
-                    line-height: 1.6rem;
-                    font-size: 0.56rem;
-                }
-            }
-            .edit_input {
-                width: 18%;
-                text-align: center;
-                //border-right: 1px solid #e7e7e7;
-                box-sizing: border-box;
-            }
-        }
-        .message_info {
-            width: 92%;
-            border-radius: 0.3rem;
-            //border: 1px solid #e7e7e7;
-            margin: 0.5rem auto;
-            min-height: 2rem;
-            position: relative;
-            textarea {
-                width: 92%;
-                padding: 0.3rem 0 0.3rem 1rem;
-                height: 100%;
-            }
-            span {
-                position: absolute;
-                top: 0.3rem;
-                left: 0.3rem;
-                img {
-                    width: 0.6rem;
-                }
-            }
-        }
-        .submit_btn {
-            width: 100%;
-            height: 2.2rem;
-            button {
-                width: 35%;
-                margin-top: 0.4rem;
-                float: left;
-                margin-left: 10%;
-                color: #fff;
-                font-size: 0.56rem;
-            }
-        }
-    }
-    .order_submit {
-        width: 100%;
+    font-size: 0.65rem;
+    .T-title {
+        width: 94%;
+        padding: 0 3%;
+        background-color: #f8f8f8;
+        border-bottom: 1px solid #f0f0f0;
+        color: #8BC43F;
         height: 2rem;
         line-height: 2rem;
-        font-size: 0.6rem;
-        color: #fff;
-        background-color: #cd3d0b;
-        text-align: center;
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        z-index: 999;
-        img {
-            height: 0.9rem;
-            position: absolute;
-            top: 0.55rem;
-            left: 50%;
-            margin-left: -2.6rem;
-            z-index: 2;
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+    .textarea {
+        width: 94%;
+        height: 100%;
+        padding: 0.5rem 3%;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid #f0f0f0;
+        textarea {
+            width: 100%;
+            min-height: 2rem;
+        }
+    }
+    .T-con {
+        width: 94%;
+        padding: 0 3%;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid #f0f0f0;
+        height: 2rem;
+        line-height: 2rem;
+        .spantext {
+            display: block;
+            float: left;
+            width: 70%;
+            i {
+                color: #db998b;
+            }
         }
         a {
             display: block;
-            width: 100%;
-            height: 100%;
+            float: right;
+            height: 1.4rem;
+            line-height: 1.4rem;
+            margin-top: 0.3rem;
+            padding: 0 0.5rem;
+            background-color: #ffa639;
+            color: #FFFFFF;
+            -webkit-border-radius: 0.25rem;
+            border-radius: 0.25rem;
         }
+        .context {
+            width: 20%;
+            float: left;
+        }
+        .spaninput {
+            float: left;
+            width: 80%;
+        }
+        .icon-202 {
+            float: right;
+            color: #cfcfcf;
+        }
+        .default_color {
+            color: #cfcfcf;
+        }
+    }
+}
+.tips {
+    width: 94%;
+    padding: 0 3%;
+    height: 2rem;
+    line-height: 2rem;
+    background-color: #f8f8f8;
+    font-size: 0.6rem;
+    color: #666666;
+    i {
+        color: #4b808e;
+    }
+}
+.pay {
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    position: fixed;
+    max-wdith: 640px;
+    min-wdith: 320px;
+    left: 0;
+    bottom: 0;
+    span {
+        width: 70%;
+        display: block;
+        height: 2rem;
+        background-color: #000000;
+        color: #FFFFFF;
+        float: left;
+        font-size: 0.65rem;
+        text-align: center;
+        i {
+            font-size: 0.56rem;
+            font-style: normal;
+        }
+        em {
+            color: #f7a446;
+            font-style: normal;
+        }
+    }
+    a {
+        display: block;
+        width: 30%;
+        float: left;
+        background-color: #8bc43f;
+        color: #FFFFFF;
+        text-align: center;
+    }
+}
+.yixiu {
+    width: 100%;
+    height: 100%;
+    p {
+        width: 100%;
+        text-align: center;
+        color: #9c9c9c;
+        font-size: 0.6rem;
+        img {
+            padding-top: 8rem;
+            width: 30%;
+            padding-bottom: 0.4rem;
+        }
+    }
+}
+.submit {
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 0.7rem;
+    color: #FFFFFF;
+    background-color: #999999;
+    text-align: center;
+    position: fixed;
+    max-wdith: 640px;
+    min-wdith: 320px;
+    left: 0;
+    bottom: 0;
+}
+.add_info_header {
+    background: #8bc43f;
+    h1,
+    .lefta {
+        color: #fff;
+    }
+}
+.editinfo_bg {
+    background: #fff;
+}
+.editinfo {
+    width: 90%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-bottom: 1px #e5e5e5 solid;
+    margin: 0 5%;
+    font-size: 0.5rem;
+    &:last-child {
+        border-bottom: none;
+    }
+    .left_edit {
+        width: 5rem;
+    }
+    .right_edit {
+        float: right;
+        position: relative;
+        .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+        /*----------用来移除向下箭头----------*/
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            opacity: 0;
+        }
+        /*----------用来移除叉叉按钮----------*/
+        input[type="date"]::-webkit-clear-button {
+            opacity: 0;
+        }
+    }
+    input,
+    select {
+        width: 12rem;
+        color: #666;
+        border: none;
+    }
+    select {
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
+    select::-ms-expand {
+        display: none;
+    }
+    input {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 5;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        background: none;
     }
 }

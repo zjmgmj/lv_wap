@@ -28,6 +28,21 @@
 .login .login_content .login_p input {
   width: 8rem;
 }
+.login .login_content .login_content_check {
+  border: 1px rgba(255, 255, 255, 0.5) solid;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #fff;
+  font-size: .6rem;
+  width: 13rem;
+  margin: .8rem auto;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: .3rem;
+}
+.login .login_content .login_content_check .icon {
+  font-size: .8rem;
+}
 .login .login_content .login_v .login_v_c {
   height: 2rem;
   line-height: 2rem;
@@ -85,3 +100,12 @@
 .login .login_content .submit_b a {
   color: #8bc53f;
 }
+.content-block input {
+  border-left: none;
+  width: 100%;
+}
+.city1 {
+  border-left: none !important;
+  width: 12rem !important;
+}
+/*# sourceMappingURL=login.css.map */

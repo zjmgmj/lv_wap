@@ -1,0 +1,185 @@
+/*多分辨率设定rem设定*/
+html {
+  font-size: 20px;
+}
+/*Note3*/
+@media only screen and (min-width: 360px) {
+  html {
+    font-size: 22px !important;
+  }
+}
+/*iPhone6*/
+@media only screen and (min-width: 376px) {
+  html {
+    font-size: 23px !important;
+  }
+}
+/*iPhone6 plus*/
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 25px !important;
+  }
+}
+/*big Resolution*/
+@media only screen and (min-width: 641px) {
+  html {
+    font-size: 28px !important;
+  }
+}
+html {
+  -ms-touch-action: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+body {
+  background-color: #f8f8f8;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+body {
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-size: 15px;
+  font-family: San Francisco, Helvetica, Arial, sans-serif;
+}
+input,
+textarea {
+  border: none;
+  outline: none;
+}
+input[type="radio"] {
+  -webkit-appearance: none;
+  /* 去掉radio的默认样式 */
+  display: block;
+  outline: none;
+  width: 0.8rem;
+  height: 0.8rem;
+  float: left;
+  margin-right: 0.5rem;
+  background-image: url("../images/radiobtn.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+input[type="radio"].checked {
+  background-image: url("../images/radiobtncheck.png");
+}
+div,
+ul,
+li,
+i,
+p {
+  list-style: none;
+  font-style: initial;
+}
+button {
+  background: none;
+  border: none;
+  font-family: "microsoft yahei", arial;
+}
+.border_bottom {
+  border-bottom: solid 1px #eee;
+}
+.orange {
+  color: #ffa541;
+}
+.green {
+  color: #06c1ae;
+}
+.bg_white {
+  background: #fff;
+}
+.m_top {
+  margin-top: 10px;
+}
+.f_r {
+  float: right;
+}
+.font_12 {
+  font-size: 12px;
+}
+.clear {
+  clear: both;
+}
+.btn {
+  height: 1.4rem;
+  text-align: center;
+  line-height: 1.4rem;
+  display: block;
+  border-radius: 0.25rem;
+}
+.default_btn {
+  background-color: #999999;
+}
+.green_btn {
+  background-color: #8bc53f;
+}
+.content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 .5rem;
+}
+/* 日历时间 */
+.calendarTime {
+  position: relative;
+  margin: 10px auto;
+  width: 60%;
+  overflow: hidden;
+  background: #06c1ae;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.dateTime {
+  width: 98%;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  background: none;/*background:url(../Assets/images/dataTime2.png) no-repeat right center;*/
+}
+.calendarTime img {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.calendarTime i {
+  position: absolute;
+  top: 0;
+  line-height: 30px;
+  color: #fff;
+  font-size: 14px;
+}
+.calendarTime i.iconRili {
+  left: 8px;
+  font-size: 20px;
+}
+.calendarTime i.iconDrop {
+  right: 8px;
+}
+.addMemo {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+  top: 2rem;
+}
+.logo {
+  color: #fff;
+  opacity: .8;
+  font-size: .7rem;
+}
+/*# sourceMappingURL=base.css.map */

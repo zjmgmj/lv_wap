@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>选择出行人</title>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/info.css" />
+
+		
+		<script src="js/jquery1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/info.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="info_header">
+			<a class="lefta icon iconfont icon-jiantou" href="javascript:history.go(-1)"></a>
+			<h1>选择出行人</h1>
+			<a href="identity.html" class="righta icon iconfont icon-xinzengyuangong"><i>新增</i></a>
+		</div>
+        <div class="Tchoose">
+        	请选择成人<i>1</i>名 儿童<i>1</i>名
+        </div>
+        <!--有出行人状态-->
+        <div class="havetravel">
+        	<div class="travel-person">
+        		<div class="person-left">
+        			 <a href="identity.html" class="icon iconfont icon-bianji-copy"></a>
+        		</div>
+        		<div class="person-middle">
+        			<p class="firstline"><span class="idname">朱伟</span><span class="idcertificate">身份证</span></p>
+        			<p class="secondline">
+        				<span class="ifadult">成人</span>
+        				<span class="sex">女</span>
+        				<span class="idcode">325574896528574125</span>
+        			</p>
+        		</div>
+        		<div class="person-right">
+        			<i class="icon iconfont icon-yuanquangou-copy"></i>
+        			<input type="checkbox" name="person" />
+        		</div>
+        	</div>
+        	<div class="travel-person">
+        		<div class="person-left">
+        			 <a href="identity.html" class="icon iconfont icon-bianji-copy"></a>
+        		</div>
+        		<div class="person-middle">
+        			<p class="firstline"><span class="idname">朱伟</span><span class="idcertificate">身份证</span></p>
+        			<p class="secondline">
+        				<span class="ifadult">成人</span>
+        				<span class="sex">女</span>
+        				<span class="idcode">325574896528574125</span>
+        			</p>
+        		</div>
+        		<div class="person-right">
+        			<i class="icon iconfont icon-yuanquangou-copy"></i>
+        			<input type="checkbox" name="person" />
+        		</div>
+        	</div>
+        </div>
+        <!--没有出行人状态-->
+        <div class="yixiu" style="display: none;">
+        	<p><img src="images/yixiu.jpg" /></p>
+        	<p>没有出行人，去新增吧</p>
+        </div>
+        <div class="submit">
+        	<a href="#">提交</a>
+        </div>
+	</body>
+
+</html>

@@ -1,13 +1,17 @@
 @border: 1px rgba(255, 255, 255, .5) solid;
-.login {
+.login_check{
+    display: none;
+}
+.login,.login_check {
     width: 100%;
     background: url(../images/login_bg_2.jpg) no-repeat;
-    height: 30rem;
-    background-size: 100%;
+    height:100%;
+    overflow: hidden;
+    background-size: 100% 100%;
     .login_content {
         width: 15rem;
         margin: 0 auto;
-        padding-top: 15rem;
+        padding-top: 13rem;
         i {
           padding:0 .3rem;
             text-align: center;
@@ -25,6 +29,21 @@
             padding-bottom: .2rem;
             input {
                 width: 8rem;
+            }
+        }
+        .login_content_check{
+            border: @border;
+            background: rgba(0,0,0,.3);
+            text-align: center;
+            color: #fff;
+            font-size: .6rem;
+            width: 13rem;
+            margin: .8rem auto;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            border-radius: .3rem;
+            .icon{
+                font-size: .8rem;
             }
         }
         .login_v {
@@ -86,5 +105,26 @@
             	color: #8bc53f;
             }
         }
+    }
+}
+.content-block{
+    input{
+        border-left: none;
+        width: 100%;
+    }
+}
+.city1{
+    border-left: none!important;
+    width: 12rem!important;
+}
+.city_check{
+    width: 100%;
+    height: 2rem;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: .8rem;
+    option{
+        background: rgba(0,0,0,.5);
     }
 }

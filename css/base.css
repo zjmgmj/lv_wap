@@ -93,7 +93,7 @@ button {
   color: #ffa541;
 }
 .green {
-  color: #8bc53f;
+  color: #06c1ae;
 }
 .bg_white {
   background: #fff;
@@ -149,8 +149,7 @@ button {
   text-align: center;
   border: 0;
   outline: 0;
-  background: none;
-  /*background:url(../Assets/images/dataTime2.png) no-repeat right center;*/
+  background: none;/*background:url(../Assets/images/dataTime2.png) no-repeat right center;*/
 }
 .calendarTime img {
   position: absolute;
@@ -183,3 +182,4 @@ button {
   opacity: .8;
   font-size: .7rem;
 }
+/*# sourceMappingURL=base.css.map */

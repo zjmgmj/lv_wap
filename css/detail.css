@@ -110,7 +110,7 @@
   margin: 0;
 }
 .detail_btn {
-  background: #8bc53f;
+  background: #06c1ae;
   padding: 0;
   width: 3.5rem;
   height: 1.3rem;
@@ -178,7 +178,7 @@
   text-align: center;
 }
 .organizers .organizers_z .parameter .parnum {
-  color: #8bc53f;
+  color: #06c1ae;
   font-size: .5rem;
   font-weight: bold;
   margin-top: .2rem;
@@ -209,7 +209,7 @@
   font-size: 0.52rem;
 }
 .detail_foot .buy_btn {
-  background: #8bc53f;
+  background: #06c1ae;
   height: 2.6rem;
   line-height: 2.6rem;
   color: #fff;
@@ -232,8 +232,8 @@
   width: 50%;
 }
 .detail_menu li.active {
-  color: #8bc53f;
-  border-bottom: .1rem solid #8bc53f;
+  color: #06c1ae;
+  border-bottom: .1rem solid #06c1ae;
 }
 .details_content {
   padding-top: .5rem;
@@ -427,3 +427,4 @@
 .buy_check .buy_back span {
   vertical-align: middle;
 }
+/*# sourceMappingURL=detail.css.map */

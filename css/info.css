@@ -1,3 +1,6 @@
+body {
+  padding-bottom: 2.4rem;
+}
 .info_header {
   width: 100%;
   height: 2rem;
@@ -351,11 +354,13 @@
   border-bottom: none;
 }
 .editinfo .left_edit {
-  width: 5rem;
+  width: 24%;
 }
 .editinfo .right_edit {
   float: right;
   position: relative;
+  width: 76%;
+  height: 100%;
 }
 .editinfo .right_edit .icon {
   position: absolute;
@@ -373,8 +378,16 @@
 }
 .editinfo input,
 .editinfo select {
-  width: 12rem;
+  width: 100%;
+  outline: none;
   color: #666;
+  border: none;
+}
+.editinfo input option,
+.editinfo select option {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
   border: none;
 }
 .editinfo select {

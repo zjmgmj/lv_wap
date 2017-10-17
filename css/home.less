@@ -64,16 +64,28 @@
 }
 .home_if {
     background: #06c1ae;
-    display: flex;
-    justify-content: space-between;
     color: #fff;
     height: 1.2rem;
     line-height: 1.2rem;
-    font-size: 0.1rem;
-    img {
-        padding-top: 0.2rem;
-        width: 0.4rem;
-        opacity: 0.8;
+    font-size: 0.56rem;
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        span {
+            display: block;
+            float: right;
+            height: 1.2rem;
+            img {
+               
+                height: 0.6rem;
+                margin-top: 0.3rem;
+                opacity: 0.8;
+            }
+        }
+        p {
+            float: left;
+        }
     }
 }
 .all_order {
@@ -117,6 +129,35 @@
         }
     }
 }
+.coupon-integral {
+    width: 100%;
+    margin-top: 0.5rem;
+    border-top: 1px #f2f2f2 solid;
+    background-color: #FFFFFF;
+    padding: 0.5rem 0;
+    height: 2rem;
+    ul {
+        width: 100%;
+        height: 100%;
+        li {
+            width: 50%;
+            float: left;
+            a {
+                color: #000000;
+                text-align: center;
+                display: block;
+                line-height: 1rem;
+                font-size: 0.65rem;
+                div {
+                    color: #ea5245;
+                }
+            }
+            a:first-child {
+                border-right: 1px solid #f2f2f2;
+            }
+        }
+    }
+}
 .home_content {
     margin-top: 0.5rem;
     font-size: 0.5rem;
@@ -124,7 +165,7 @@
         padding: 0.35rem 0;
         //padding-bottom: .3rem;
         //margin-bottom: .3rem;
-        padding-left:1rem;
+        padding-left: 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -191,7 +232,7 @@
     display: none;
     .tabbar_content_ul {
         background: #fff;
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
     }
     .tabbar_content_top {
         height: 2rem;
@@ -210,7 +251,7 @@
         .tabbar_content_detail_r {
             width: 12rem;
             @media only screen and (min-width: 100px) and (max-width: 330px) {
-                 width: 11.5rem;
+                width: 11.5rem;
             }
             h4 {
                 color: #666;

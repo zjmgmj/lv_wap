@@ -61,17 +61,28 @@
 }
 .home_if {
   background: #06c1ae;
-  display: flex;
-  justify-content: space-between;
   color: #fff;
   height: 1.2rem;
   line-height: 1.2rem;
-  font-size: 0.1rem;
+  font-size: 0.56rem;
 }
-.home_if img {
-  padding-top: 0.2rem;
-  width: 0.4rem;
+.home_if a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.home_if a span {
+  display: block;
+  float: right;
+  height: 1.2rem;
+}
+.home_if a span img {
+  height: 0.6rem;
+  margin-top: 0.3rem;
   opacity: 0.8;
+}
+.home_if a p {
+  float: left;
 }
 .all_order {
   display: flex;
@@ -113,6 +124,35 @@
 }
 .home_status ul li a {
   color: #999;
+}
+.coupon-integral {
+  width: 100%;
+  margin-top: 0.5rem;
+  border-top: 1px #f2f2f2 solid;
+  background-color: #FFFFFF;
+  padding: 0.5rem 0;
+  height: 2rem;
+}
+.coupon-integral ul {
+  width: 100%;
+  height: 100%;
+}
+.coupon-integral ul li {
+  width: 50%;
+  float: left;
+}
+.coupon-integral ul li a {
+  color: #000000;
+  text-align: center;
+  display: block;
+  line-height: 1rem;
+  font-size: 0.65rem;
+}
+.coupon-integral ul li a div {
+  color: #ea5245;
+}
+.coupon-integral ul li a:first-child {
+  border-right: 1px solid #f2f2f2;
 }
 .home_content {
   margin-top: 0.5rem;
@@ -186,7 +226,7 @@
 }
 .tabbar_content .tabbar_content_ul {
   background: #fff;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .tabbar_content .tabbar_content_top {
   height: 2rem;
@@ -227,3 +267,4 @@
 .tabbar_content .tabbar_content_detail .tabbar_content_detail_r .f26 .c9 {
   padding-right: 0.3rem;
 }
+/*# sourceMappingURL=home.css.map */

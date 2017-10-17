@@ -22,7 +22,9 @@ $(document).ready(function() {
 	}
 
 	$('.choose_age_add').click(function() {
-		var html = '<div class="choose-age"><p></p><input type="text" value="孩子生日" id="input2" /></div>'
+		var html = '<div class="choose-age">' +
+			'<p></p><input type="text" value="孩子生日" id="input2" />' +
+			'<div class="close_choose_age"><i class="icon iconfont icon-jia"></i></div></div>'
 		$('.info-age').append(html);
 		$(this).hide();
 		$("#input2").shijian({
@@ -36,6 +38,12 @@ $(document).ready(function() {
 				age('#input2', sjObj.opt.yyyy);
 			}
 		});
+		$('.close_choose_age').click(function() {
+			$(this).parent('.choose-age').remove();
+			$('.choose_age_add').show();
+			return false;
+		});
+		return false;
 	});
 
 });

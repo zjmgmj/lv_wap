@@ -396,3 +396,24 @@
   opacity: 0.6;
   font-size: 0.7rem;
 }
+.close_choose_age {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+  border-radius: 100%;
+  background: #0a6a6c;
+  border: 1px #fff solid;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -moz-transform: rotate(45deg);
+  /* Firefox */
+  -webkit-transform: rotate(45deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(45deg);
+  /* Opera */
+}

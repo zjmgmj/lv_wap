@@ -12,17 +12,20 @@
 		<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<link rel="stylesheet" type="text/css" href="css/info.css" />
+        <link rel="stylesheet" href="css/shijian.css">
+		<script src='http://libs.baidu.com/jquery/1.10.2/jquery.min.js' type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquer_shijian.js?ver=1" type="text/javascript" charset="utf-8"></script>
+		
 
-		<script src="js/jquery1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/info.js" type="text/javascript" charset="utf-8"></script>
+
 	</head>
 
 	<body>
 		<div class="info_header add_info_header">
-			<a class="lefta icon iconfont icon-jiantou" href="javascript:;"></a>
+			<a class="lefta icon iconfont icon-jiantou" href="javascript:history.go(-1)"></a>
 			<h1>添加出行人</h1>
 		</div>
-		<div class="editinfo_bg">
+		<div class="editinfo_bg addperson">
 			<div class="editinfo ">
 				<span class="right_edit"><input type="text" name="" placeholder="请输入真实姓名" /></span>
 				<span class="left_edit">出行人姓名</span>
@@ -36,32 +39,43 @@
 					<div class="icon iconfont icon-202"></div>
 				</span>
 				<span class="left_edit">性别</span>
-				
+
 			</div>
 			<div class="editinfo">
 				<span class="right_edit">
-					<input type="date" name="" placeholder="点击选择 生日" />
+					<input type="text"  id="input4" value="1989/01/01"/>
 					<div class="icon iconfont icon-202"></div>
 				</span>
 				<span class="left_edit">出生日期</span>
-				
 			</div>
 			<div class="editinfo">
 				<span class="right_edit">
 				<select name="">
 					<option value="身份证">身份证</option>
+					<option value="护照">护照</option>
 				</select>
 				<div class="icon iconfont icon-202"></div>
 			</span>
 				<span class="left_edit">证件类型</span>
-				
+
 			</div>
 			<div class="editinfo">
 				<span class="right_edit"><input type="text" name="" placeholder="请输入证件号码" /></span>
 				<span class="left_edit">证件号码</span>
-				
+			</div>
+			<div class="submit">
+				<a href="#">提交</a>
 			</div>
 		</div>
+		<script>
+			$("#input4").shijian({
+			startYear:1989,
+			val:1989,
+			endYear:2017,
+			Hour:false,//是否显示小时
+ 			Minute:false,//是否显分钟
+		})
+		</script>
 	</body>
 
 </html>

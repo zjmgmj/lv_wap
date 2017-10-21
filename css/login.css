@@ -4,7 +4,7 @@
 .login,
 .login_check {
   width: 100%;
-  background: url(../images/login_bg_2.jpg) no-repeat;
+  background: url("../images/login_bg_2.jpg") no-repeat;
   height: 100%;
   overflow: hidden;
   background-size: 100% 100%;
@@ -17,7 +17,7 @@
 }
 .login .login_content i,
 .login_check .login_content i {
-  padding: 0 .3rem;
+  padding: 0 0.3rem;
   text-align: center;
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.8);
@@ -25,14 +25,14 @@
 }
 .login .login_content li,
 .login_check .login_content li {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .login .login_content .login_p,
 .login_check .login_content .login_p {
   border-bottom: 1px rgba(255, 255, 255, 0.5) solid;
   height: 2rem;
   line-height: 2rem;
-  padding-bottom: .2rem;
+  padding-bottom: 0.2rem;
 }
 .login .login_content .login_p input,
 .login_check .login_content .login_p input {
@@ -44,22 +44,22 @@
   background: rgba(0, 0, 0, 0.3);
   text-align: center;
   color: #fff;
-  font-size: .6rem;
+  font-size: 0.6rem;
   width: 13rem;
-  margin: .8rem auto;
+  margin: 0.8rem auto;
   height: 1.5rem;
   line-height: 1.5rem;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
 }
 .login .login_content .login_content_check .icon,
 .login_check .login_content .login_content_check .icon {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 .login .login_content .login_v .login_v_c,
 .login_check .login_content .login_v .login_v_c {
   height: 2rem;
   line-height: 2rem;
-  padding-bottom: .2rem;
+  padding-bottom: 0.2rem;
   width: 11rem;
   border-bottom: 1px rgba(255, 255, 255, 0.5) solid;
   float: left;
@@ -75,10 +75,10 @@
   line-height: 1.5rem;
   color: rgba(255, 255, 255, 0.8);
   border: 1px solid #fff;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   background: rgba(3, 3, 3, 0.4);
-  margin-top: .5rem;
-  margin-left: .5rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
 }
 .login .login_content input,
 .login_check .login_content input {
@@ -88,12 +88,12 @@
   padding-left: 1rem;
   color: rgba(255, 255, 255, 0.8);
   background: none;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 .login .login_content input::-webkit-input-placeholder,
 .login_check .login_content input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.8);
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 .login .login_content .submit_b,
 .login_check .login_content .submit_b {
@@ -108,14 +108,14 @@
   height: 1.5rem;
   color: rgba(255, 255, 255, 0.8);
   border: 1px solid #fff;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   background: rgba(3, 3, 3, 0.4);
-  margin-bottom: .2rem;
-  font-size: .7rem;
+  margin-bottom: 0.2rem;
+  font-size: 0.7rem;
 }
 .login .login_content .submit_b p,
 .login_check .login_content .submit_b p {
-  font-size: .3rem;
+  font-size: 0.3rem;
 }
 .login .login_content .submit_b a,
 .login_check .login_content .submit_b a {
@@ -135,9 +135,42 @@
   border: none;
   background: none;
   color: #fff;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 .city_check option {
   background: rgba(0, 0, 0, 0.5);
+}
+.shide {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 50% 10% 0;
+}
+.desc {
+  font-size: 0.7rem;
+  color: #666;
+  letter-spacing: 0.05rem;
+}
+.confirm {
+  background: #fff;
+  width: 100%;
+  height: 5rem;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+.textarea {
+  height: 3rem;
+  line-height: 3rem;
+}
+.btnarea {
+  height: 2rem;
+  line-height: 2rem;
+  border-top: 1px #efefef solid;
+  color: #06c1ae;
 }
 /*# sourceMappingURL=login.css.map */

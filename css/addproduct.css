@@ -1,0 +1,109 @@
+.addproduct {
+  width: 100%;
+  height: 100%;
+}
+.addproduct .addproduct-con {
+  width: 100%;
+  height: 100%;
+}
+.addproduct .addproduct-con .productcon {
+  width: 94%;
+  padding: 0.3rem 3%;
+  background-color: #FFFFFF;
+  height: 3rem;
+  position: relative;
+}
+.addproduct .addproduct-con .productcon .productcon-left {
+  width: 18%;
+  display: block;
+  color: #06c1ae;
+  float: left;
+  font-size: 0.9rem;
+  height: 3rem;
+  line-height: 1.4rem;
+  font-weight: bold;
+}
+.addproduct .addproduct-con .productcon .productcon-left i {
+  font-size: 0.6rem;
+  font-weight: normal;
+}
+.addproduct .addproduct-con .productcon .productcon-right {
+  width: 67%;
+  float: left;
+}
+.addproduct .addproduct-con .productcon .productcon-right h1 {
+  width: 100%;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 0.7rem;
+}
+.addproduct .addproduct-con .productcon .productcon-right p {
+  color: #666;
+  font-size: 0.56rem;
+  line-height: 0.9rem;
+}
+.addproduct .addproduct-con .productcon .xiala-arrow {
+  width: 15%;
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  height: 2rem;
+  line-height: 2rem;
+  margin-top: -1rem;
+  text-align: right;
+}
+.addproduct .addproduct-con .productcon .xiala-arrow i {
+  color: #06c1ae;
+}
+.addproduct .addproduct-con .purchase-user {
+  width: 100%;
+  height: 100%;
+  background-color: #fbfbfb;
+  overflow: hidden;
+}
+.addproduct .addproduct-con .purchase-user li {
+  width: 94%;
+  height: 2.2rem;
+  padding: 0.5rem 3%;
+  border-bottom: solid 1px #eee;
+}
+.addproduct .addproduct-con .purchase-user li span {
+  display: block;
+  float: left;
+}
+.addproduct .addproduct-con .purchase-user li .userpic {
+  width: 18%;
+  text-align: center;
+  height: 2rem;
+  line-height: 2rem;
+}
+.addproduct .addproduct-con .purchase-user li .userpic img {
+  border-radius: 0.9rem;
+  height: 1.8rem;
+  margin-top: 0.1rem;
+}
+.addproduct .addproduct-con .purchase-user li .userinfo {
+  width: 82%;
+}
+.addproduct .addproduct-con .purchase-user li .userinfo .username {
+  width: 100%;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+}
+.addproduct .addproduct-con .purchase-user li .userinfo .username i {
+  font-size: 0.56rem;
+  color: #06c1ae;
+  border: 1px solid #06c1ae;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.3rem;
+  margin-left: 0.25rem;
+}
+.addproduct .addproduct-con .purchase-user li .userinfo .userdescripe {
+  color: #666;
+  font-size: 0.6rem;
+  height: 1rem;
+  line-height: 1rem;
+}
+/*# sourceMappingURL=addproduct.css.map */

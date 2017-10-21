@@ -1,3 +1,6 @@
+body {
+    padding-bottom: 2.4rem;
+}
 .info_header {
     width: 100%;
     height: 2rem;
@@ -48,8 +51,11 @@
     height: 2rem;
     line-height: 2rem;
     font-size: 0.6rem;
-    background-color: #8BC43F;
+    background-color: #07c1c0;
     color: #FFFFFF;
+}
+.addperson {
+    background-color: #FFFFFF;
 }
 .Tchoose {
     padding: 0.5rem 3%;
@@ -63,7 +69,7 @@
         padding: 0 3%;
         background-color: #f8f8f8;
         border-bottom: 1px solid #f0f0f0;
-        color: #8BC43F;
+        color: #06c1ae;
         height: 2rem;
         line-height: 2rem;
         font-size: 0.7rem;
@@ -123,6 +129,44 @@
             color: #cfcfcf;
         }
     }
+    .Travel-choose {
+        width: 94%;
+        padding: 0 3%;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid #f0f0f0;
+        position: relative;
+        .chooseperson {
+            width: 90%;
+            height: 2rem;
+            line-height: 2rem;
+            border-bottom: 1px solid #f0f0f0;
+            span {
+                display: block;
+                float: left;
+            }
+            .age {
+                width: 30%;
+            }
+            .age-name {
+                width: 60%;
+            }
+        }
+        .chooseperson:last-child {
+            border: none;
+        }
+        .edit_age {
+            width: 10%;
+            height: 2rem;
+            position: absolute;
+            right: 3%;
+            top: 50%;
+            z-index: 3;
+            text-align: right;
+            margin-top: -1rem;
+            line-height: 2rem;
+            color: #cfcfcf;
+        }
+    }
 }
 .tips {
     width: 94%;
@@ -167,7 +211,7 @@
         display: block;
         width: 30%;
         float: left;
-        background-color: #8bc43f;
+        background-color: #06c1ae;
         color: #FFFFFF;
         text-align: center;
     }
@@ -187,6 +231,98 @@
         }
     }
 }
+.havetravel {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    .travel-person {
+        width: 100%;
+        height: 3rem;
+        border-bottom: 1px solid #d5d5d5;
+        position: relative;
+        div {
+            float: left;
+        }
+        .person-left {
+            width: 10%;
+            text-align: center;
+            height: 3rem;
+            line-height: 3rem;
+            background-color: #f8f8f8;
+            a {
+                font-size: 0.8rem;
+                color: #c4c4c4;
+            }
+        }
+        .person-middle {
+            width: 75%;
+            height: 2rem;
+            padding: 0.3rem 2.5%;
+            p {
+                width: 100%;
+                height: 1.2rem;
+                line-height: 1.2rem;
+                font-size: 0.65rem;
+            }
+            .firstline {
+                span {
+                    display: block;
+                    float: left;
+                    height: 1.2rem;
+                }
+                .idname {
+                    width: 25%;
+                }
+                .idcertificate {
+                    width: 75%;
+                }
+            }
+            .secondline {
+                span {
+                    float: left;
+                    display: block;
+                    height: 1.2rem;
+                }
+                .ifadult {
+                    width: 15%;
+                }
+                .sex {
+                    width: 10%;
+                }
+                .idcode {
+                    width: 75%;
+                }
+            }
+        }
+        .person-right {
+            width: 10%;
+            position: absolute;
+            right: 3%;
+            top: 50%;
+            height: 2rem;
+            margin-top: -1rem;
+            line-height: 2rem;
+            text-align: right;
+            input {
+                -webkit-opacity: 0;
+                opacity: 0;
+                position: absolute;
+                right: 3%;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 3;
+            }
+            i {
+                color: #c4c4c4;
+                font-size: 0.8rem;
+            }
+            i.checkedbox {
+                color: #ffa642;
+            }
+        }
+    }
+}
 .submit {
     width: 100%;
     height: 2rem;
@@ -202,14 +338,11 @@
     bottom: 0;
 }
 .add_info_header {
-    background: #8bc43f;
+    background: #06c1ae;
     h1,
     .lefta {
         color: #fff;
     }
-}
-.editinfo_bg {
-    background: #fff;
 }
 .editinfo {
     width: 90%;
@@ -224,11 +357,13 @@
         border-bottom: none;
     }
     .left_edit {
-        width: 5rem;
+        width: 24%;
     }
     .right_edit {
         float: right;
         position: relative;
+        width: 76%;
+        height: 100%;
         .icon {
             position: absolute;
             right: 0;
@@ -246,9 +381,16 @@
     }
     input,
     select {
-        width: 12rem;
+        width: 100%;
+        outline: none;
         color: #666;
         border: none;
+        option {
+            width: 100%;
+            height: 1rem;
+            line-height: 1rem;
+            border: none;
+        }
     }
     select {
         appearance: none;
@@ -272,71 +414,152 @@
     width: 15px;
 }
 .improve_information {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 1rem;
+    width: 94%;
+    padding: 0 3%;
     height: 2rem;
-    line-height:2rem;
-    border-bottom:1px #ccc solid;
-    input{
+    line-height: 2rem;
+    border-bottom: 1px #f5f5f5 solid;
+    background-color: #FFFFFF;
+    input {
         height: 1.9rem;
     }
-    
-    
-    .code_btn{
+    .code_btn {
         width: 3rem;
         text-align: center;
     }
-    .f_l{
+    .f_l {
         float: left;
     }
-    .improve_tel{
-        width:12rem ;
-        margin-left: .5rem;
+    .improve_tel {
+        width: 80%;
     }
-    .improve_code{
-        width: 10rem;
-        margin-left: .5rem;
+    .improve_code {
+        width: 65%;
     }
     .code_btn {
-        width: 2rem;
+        width: 15%;
         height: 1rem;
         line-height: 1rem;
         text-align: center;
         display: block;
-        background: #8bc43f;
-        border-radius: .2rem;
+        background: #06c1ae;
+        border-radius: 0.2rem;
         color: #fff;
-        margin-top: .5rem;
+        margin-top: 0.5rem;
     }
-    .improve_text{
-        width: 2rem;
-        text-align: right;
+    .improve_text {
+        width: 20%;
+        text-align: left;
     }
-    
-    &:after{
+    &:after {
         clear: both;
         content: '';
         display: block;
     }
 }
-.bind_tel_submit{
+.bind_tel_submit {
     clear: both;
     width: 15rem;
     margin: 1rem auto 0;
     display: block;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     color: #fff;
     height: 2rem;
-    background: #8bc43f;
+    background: #06c1ae;
     text-align: center;
     line-height: 2rem;
-    font-size: .8rem;
+    font-size: 0.8rem;
 }
-.tishi{
-        font-size: .5rem;
-        color: #999;
-        padding: .5rem 0;
-        box-sizing: border-box;
-        padding-left: 1rem;
+.tishi {
+    font-size: 0.5rem;
+    color: #999;
+    padding: 0.5rem 0;
+    box-sizing: border-box;
+    padding-left: 1rem;
+}
+.city-block {
+    width: 94%;
+    padding: 0 3%;
+    height: 2rem;
+    line-height: 2rem;
+    border-bottom: 1px #f5f5f5 solid;
+    font-size: 0.65rem;
+    color: #333333;
+    background-color: #FFFFFF;
+}
+.editinfo_travelers {
+    height: 3rem;
+    border-bottom: 1px #e5e5e5 solid;
+    font-size: 0.5rem;
+    width: 90%;
+    margin: 0 5%;
+    box-sizing: border-box;
+    padding: 0.5rem 0;
+    line-height: 1rem;
+    color: #666;
+    .right_edit {
+        float: right;
+        position: relative;
+        width: 76%;
+        height: 100%;
+        .icon {
+            position: absolute;
+            right: 0;
+            top: 0.5rem;
+            z-index: 1;
+        }
     }
+    .left_edit {
+        width: 24%;
+        .left_edit_m,
+        .left_edit_w {
+            width: 3rem;
+            height: 0.8rem;
+            line-height: 0.8rem;
+            border-radius: 1rem;
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+            span {
+                width: 50%;
+                height: 50%;
+                height: 100%;
+                display: inline-block;
+                font-size: 0.05rem;
+            }
+        }
+        .left_edit_m {
+            background: #5abaed;
+            span {
+                &:last-child {
+                    background: #82cbeb;
+                }
+            }
+        }
+        .left_edit_w {
+            background: #fe7c62;
+            span {
+                &:last-child {
+                    background: #ffa08d;
+                }
+            }
+        }
+    }
+    .font_06 {
+        font-size: 0.6rem;
+    }
+}
+.add_travelers{
+    width: 80%;
+    margin: 2rem 10% 0;
+    text-align: center;
+    background: #06c1ae;
+    color: #fff;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 3rem;
+    font-size: .7rem;
+    .icon{
+        font-size: .8rem;
+    }
+}

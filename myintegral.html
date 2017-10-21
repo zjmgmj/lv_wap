@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的积分</title>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/member.css" />
+		<script src="js/jquery1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header class="detail_header">
+			<div>
+				<ul class="flex">
+					<li class="home"><img src="images/home.png" /></li>
+					<li class="logo">菲 趣</li>
+					<li class="personal"><img src="images/personal.png" /></li>
+				</ul>
+			</div>
+		</header>
+		<div class="myintegral">
+			<div class="integral">
+				<div>
+					<span>当前积分</span>
+					<span class="integral-num-red">0<i>分</i></span>
+				</div>
+				<div>
+					<span>本月即将过期的积分</span>
+					<span class="integral-num-gray">0<i>分</i></span>
+				</div>
+			</div>
+			<div class="integral-get">
+				<div class="integral-tit">
+					<h1><img src="images/integral.jpg" /><span>如何赚取积分</span></h1>
+					<p>积分规则</p>
+				</div>
+				<ul class="how-get">
+					<li class="signin">
+						<p class="get-name">签到<i>+5</i></p>
+						<p class="get-img"><img src="images/qiandao.jpg" /></p>
+						<p class="get-progress">0/1</p>
+					</li>
+					<li>
+						<p class="get-name">朋友圈分享</p>
+						<p class="get-img"><img src="images/share.jpg" /></p>
+						<p class="get-progress">0/15</p>
+					</li>
+					<li>
+						<p class="get-name">邀请购买</p>
+						<p class="get-img"><img src="images/goumai.jpg" /></p>
+						<p class="get-progress">0/20</p>
+					</li>
+					<li>
+						<p class="get-name">邀请注册</p>
+						<p class="get-img"><img src="images/zhuce.jpg" /></p>
+						<p class="get-progress">0/100</p>
+					</li>
+				</ul>
+			</div>
+			<div class="integral-edit">
+				<div class="integral-edit-tit">
+					<h1 class="click-left click-current"><a href="javascript:;">积分兑换</a></h1>
+					<h1 class="click-right"><a href="javascript:;">积分明细</a></h1>
+				</div>
+				<ul class="integral-duihuan">
+					<li>
+						<div class="integral-left"><i>￥</i>2000</div>
+						<div class="integral-right">
+							<p class="integral-name">500积分兑换“馅饼侠”海景房升级券</p>
+							<p class="integral-time">有效期2017-09-24至2017-10-24</p>
+							<p class="integral-condition">1、优惠券为“馅饼侠”用户奖励
+							2、券额不等于产品市场价，此券仅用于用户升级海景房使用（青岛红树林）</p>
+						</div>
+					</li>
+					<li>
+						<div class="integral-left"><i>￥</i>2000</div>
+						<div class="integral-right">
+							<p class="integral-name">500积分兑换“馅饼侠”海景房升级券</p>
+							<p class="integral-time">有效期2017-09-24至2017-10-24</p>
+							<p class="integral-condition">1、优惠券为“馅饼侠”用户奖励
+							2、券额不等于产品市场价，此券仅用于用户升级海景房使用（青岛红树林）</p>
+						</div>
+					</li>
+				</ul>
+				<ul class="integral-detail">
+					<li>
+						<div class="detail-left">
+							<p class="detail-title">邀请好友gmj注册成功</p>
+							<p class="detail-time">2017-09-10&nbsp;17:00:33</p>
+						</div>
+						<div class="detail-right">+20</div>
+					</li>
+					<li>
+						<div class="detail-left">
+							<p class="detail-title">邀请好友gmj注册成功</p>
+							<p class="detail-time">2017-09-10&nbsp;17:00:33</p>
+						</div>
+						<div class="detail-right">+20</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				$(".integral-edit-tit h1").bind("click",function(){
+					$(".integral-edit-tit h1").removeClass("click-current");					
+					$(this).addClass("click-current");
+				})
+				$(".click-left").bind("click",function(){
+					$(".integral-duihuan").show();
+					$(".integral-detail").hide();
+					
+				});
+				$(".click-right").bind("click",function(){
+					$(".integral-duihuan").hide();
+					$(".integral-detail").show();
+				});
+				$(".signin").bind("click",function(){
+					$(".signin i").show().animate({top:"-3rem"},1000);
+				})
+			});
+		</script>
+	</body>
+
+</html>

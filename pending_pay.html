@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户中心</title>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+
+		<link rel="stylesheet" type="text/css" href="css/detail.css" />
+		<link rel="stylesheet" type="text/css" href="css/home.css" />
+		<script src="js/jquery1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/order_status.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header class="detail_header">
+			<div>
+				<ul class="flex">
+					<li class="home"><img src="images/home.png" /></li>
+					<li class="logo">菲 趣</li>
+					<li class="personal"><img src="images/personal.png" /></li>
+				</ul>
+			</div>
+		</header>
+		<div class="tabbar">
+			<ul>
+				<li class="tabbar_list " id="all">
+					<span class="">全部</span>
+				</li>
+				<li class="tabbar_list" id="pending_pay">
+					<span class="active">待付款</span>
+				</li>
+				<li class="tabbar_list" id="not_traveled">
+					<span class="">未出行</span>
+				</li>
+				<li class="tabbar_list" id="evaluated">
+					<span class="">待评价</span>
+				</li>
+				<li class="tabbar_list" id="refund_order">
+					<span class="">退款订单</span>
+				</li>
+			</ul>
+		</div>
+		<!--全部-->
+		<div class="tabbar_content all">
+			<ul class="tabbar_content_ul ">
+				<li class="flex tabbar_content_top content">
+					<span>付款中</span>
+					<span><i class="icon_pay">￥</i>14600</span>
+				</li>
+				<li class="flex tabbar_content_detail content">
+					<img src="images/7973bfc0-c808-4871-8eae-02e195e2a8dc.jpg"/>
+					<div class="tabbar_content_detail_r">
+						<h4 >经典升级｜别去错了，这个巴厘岛线才是亲子旅行天堂</h4>
+						<p class="f26">
+							<span class="c9">活动时间</span>
+							<span class="">2018-01-26 12:00:00</span>
+						</p>
+						<p class="f26">
+							<span class="c9">活动人数</span>
+							<span>1成人1儿童</span>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--带付款-->
+		<div class="tabbar_content pending_pay" style="display: block;">
+			<ul class="tabbar_content_ul ">
+				<li class="flex tabbar_content_top content">
+					<span>付款中</span>
+					<span><i class="icon_pay">￥</i>14600</span>
+				</li>
+				<li class="flex tabbar_content_detail content">
+					<img src="images/7973bfc0-c808-4871-8eae-02e195e2a8dc.jpg"/>
+					<div class="tabbar_content_detail_r">
+						<h4 >经典升级｜别去错了，这个巴厘岛线才是亲子旅行天堂</h4>
+						<p class="f26">
+							<span class="c9">活动时间</span>
+							<span class="">2018-01-26 12:00:00</span>
+						</p>
+						<p class="f26">
+							<span class="c9">活动人数</span>
+							<span>1成人1儿童</span>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--为出行-->
+		<div class="tabbar_content not_traveled">
+			<ul class="tabbar_content_ul ">
+				<li class="flex tabbar_content_top content">
+					<span>未出行</span>
+					<span><i class="icon_pay">￥</i>14600</span>
+				</li>
+				<li class="flex tabbar_content_detail content">
+					<img src="images/7973bfc0-c808-4871-8eae-02e195e2a8dc.jpg"/>
+					<div class="tabbar_content_detail_r">
+						<h4 >经典升级｜别去错了，这个巴厘岛线才是亲子旅行天堂</h4>
+						<p class="f26">
+							<span class="c9">活动时间</span>
+							<span class="">2018-01-26 12:00:00</span>
+						</p>
+						<p class="f26">
+							<span class="c9">活动人数</span>
+							<span>1成人1儿童</span>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--待评价-->
+		<div class="tabbar_content evaluated">
+			<ul class="tabbar_content_ul ">
+				<li class="flex tabbar_content_top content">
+					<span>待评价</span>
+					<span><i class="icon_pay">￥</i>14600</span>
+				</li>
+				<li class="flex tabbar_content_detail content">
+					<img src="images/7973bfc0-c808-4871-8eae-02e195e2a8dc.jpg"/>
+					<div class="tabbar_content_detail_r">
+						<h4 >经典升级｜别去错了，这个巴厘岛线才是亲子旅行天堂</h4>
+						<p class="f26">
+							<span class="c9">活动时间</span>
+							<span class="">2018-01-26 12:00:00</span>
+						</p>
+						<p class="f26">
+							<span class="c9">活动人数</span>
+							<span>1成人1儿童</span>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--退款订单-->
+		<div class="tabbar_content refund_order">
+			<ul class="tabbar_content_ul ">
+				<li class="flex tabbar_content_top content">
+					<span>退款中</span>
+					<span><i class="icon_pay">￥</i>14600</span>
+				</li>
+				<li class="flex tabbar_content_detail content">
+					<img src="images/7973bfc0-c808-4871-8eae-02e195e2a8dc.jpg"/>
+					<div class="tabbar_content_detail_r">
+						<h4 >经典升级｜别去错了，这个巴厘岛线才是亲子旅行天堂</h4>
+						<p class="f26">
+							<span class="c9">活动时间</span>
+							<span class="">2018-01-26 12:00:00</span>
+						</p>
+						<p class="f26">
+							<span class="c9">活动人数</span>
+							<span>1成人1儿童</span>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

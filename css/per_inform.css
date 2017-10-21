@@ -1,0 +1,45 @@
+.right_edit {
+  position: relative;
+}
+.per_header_img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  overflow: hidden;
+  position: absolute;
+  right: .9rem;
+  top: .3rem;
+  z-index: 1;
+}
+.upload_per_header_img {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+}
+.per_title {
+  font-size: .8rem;
+  border-bottom: none;
+  background: #f8f8f8;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 5%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+.per_title a {
+  color: #06c1ae;
+  float: right;
+  font-size: .5rem;
+}
+.per_title a i {
+  font-size: .3rem;
+  padding: 0 .1rem;
+}
+.border_none {
+  border: none;
+}
+/*# sourceMappingURL=per_inform.css.map */

@@ -4,7 +4,7 @@
   line-height: 2rem;
   text-align: center;
   color: #fff;
-  background-color: #8bc53f;
+  background-color: #06c1ae;
 }
 .date_content h1 {
   font-size: 0.6rem;
@@ -53,7 +53,7 @@
   color: #aaa;
 }
 .date_content .date_num li .date_status {
-  color: #8bc53f;
+  color: #06c1ae;
   text-align: right;
 }
 .date_content .date_num li .date_money {

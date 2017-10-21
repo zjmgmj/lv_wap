@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>完善信息</title>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/member.css" />
+		<link rel="stylesheet" href="css/shijian.css">
+		<script src='http://libs.baidu.com/jquery/1.10.2/jquery.min.js' type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquer_shijian.js?ver=1" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header class="detail_header">
+			<div>
+				<ul class="flex">
+					<li class="home"><img src="images/home.png" /></li>
+					<li class="logo">菲 趣</li>
+					<li class="personal"><img src="images/personal.png" /></li>
+				</ul>
+			</div>
+		</header>
+		<div class="improveinfo">
+			<div class="improveinfo_bg"><img src="images/login_bg_2.jpg" /></div>
+			<div class="improveinfo-edit">
+				<div class="improveinfo-tips">
+					<p>完善孩子年龄信息</p>
+					<span>为您推荐适龄的亲子活动</span>
+				</div>
+				<div class="info-age">
+					<div class="choose-age"><p></p><input type="text" value="8岁" id="input1" /></div>
+					<div class="choose-age"><p></p><input type="text" value="孩子生日" id="input2" /></div>
+				</div>
+				<div class="preservation">保存</div>
+			</div>			
+		</div>
+		<script>
+			$("#input1").shijian({
+			startYear:1989,
+			val:1989,
+			endYear:2017,
+			
+			Hour:false,//是否显示小时
+ 			Minute:false,//是否显分钟
+		})
+		</script>
+	</body>
+
+</html>

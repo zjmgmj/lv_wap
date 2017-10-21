@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,height=device-height,maximum-scale=1.0,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-touch-fullscreen" content="yes" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<title>编辑评论</title>
+		<link href="css/base.css" rel="stylesheet" type="text/css" />
+		<link href="font/iconfont.css" rel="stylesheet" type="text/css" />
+		<link href="css/evaluate.css" rel="stylesheet" type="text/css" />
+		<link href="css/footer.css" rel="stylesheet" type="text/css" />
+		<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	</head>
+
+	<body>
+
+		<div class="edit-evaluate">
+			<div class="title">
+				<a href="javascript:history.go(-1)" style="color: #FFFFFF;">
+					<i class="icon iconfont icon-jiantou"></i>
+				</a>
+				<p>编辑评论</p>
+			</div>
+			<div class="t_height"></div>
+			<div class="evaluate-goods">
+				<div class="goods-img"><img src="images/201611231112037752.png" /></div>
+				<div class="goods-info">
+					<p class="goods-name">[菲趣万圣节狂欢]9.9抢农场南瓜，参与南瓜兽大战</p>
+					<p class="goods-price">￥29.9</p>
+				</div>
+			</div>
+			<div class="edit-title">
+				<div class="pingfen">评分项1：</div>
+				<div id="default-demo" class="star"></div>
+			</div>
+			<div class="edit-title">
+				<div class="pingfen">评分项2：</div>
+				<div id="default-demo1" class="star"></div>
+			</div>
+			<div class="edit-text">
+				<textarea placeholder="请输入您的评价内容"></textarea>
+			</div>
+			
+		</div>
+		<div class="fabu"><a href="javascript:;" style="color: #FFFFFF;">发布</a></div>
+		<script type="text/javascript" src="js/jquery.star.js"></script>
+		<script type="text/javascript" src="js/jquery.raty.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				$.fn.raty.defaults.path = 'images';
+				$('#default-demo').raty();
+				$('#default-demo1').raty();
+			});
+		</script>
+		
+
+</body>
+
+</html>

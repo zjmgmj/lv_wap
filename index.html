@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/easyui.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/detail.css" />-->
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+		<script src="js/jquery1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fullcalendar.js"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header class="detail_header">
+			<div>
+				<ul class="flex">
+					<li class="area"><span>常州市</span><i class="icon iconfont icon-jiantou-copy-copy-copy"></i></li>
+					<li class="search"><input type="search" name="" id="" value="" placeholder="菲 趣" />
+						<button class="search_btn"><i class="icon iconfont icon-search"></i></button>
+					</li>
+					<li class="personal"><i class="icon iconfont icon-geren1"></i></li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="detail_content">
+			<div class="banner">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="images/201709011327101cacf3b80dfb.png" width="100%" /></div>
+						<div class="swiper-slide"><img src="images/2017090113292478d960e83cbb.jpg" width="100%" /></div>
+						<div class="swiper-slide"><img src="images/201709011327101cacf3b80dfb.png" width="100%" /></div>
+						<div class="swiper-slide"><img src="images/2017090113292478d960e83cbb.jpg" width="100%" /></div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+				<script>
+					var swiper = new Swiper('.swiper-container', {
+						pagination: '.swiper-pagination',
+						nextButton: '.swiper-button-next',
+						prevButton: '.swiper-button-prev',
+						slidesPerView: 1,
+						paginationClickable: true,
+						spaceBetween: 30,
+						loop: true
+					});
+				</script>
+			</div>
+
+			<!--**-->
+			<div class="index_content">
+				<div class="index_menu content">
+					<ul class="flex">
+						<li>
+							<a href="">市内活动</a>
+						</li>
+						<li>
+							<a href="">周边游学</a>
+						</li>
+						<li>
+							<a href="">景点剧场</a>
+						</li>
+						<li>
+							<a href="">冬夏令营</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="topic">
+					<i class="icon iconfont icon-star-small"></i>
+					<span>专题活动</span>
+				</div>
+				<div class="topic_classification ">
+					<ul class="flex content">
+						<li class="topic_c_list"><img src="images/201704141602565642840e2d6e.jpg" /></li>
+						<li class="topic_c_list"><img src="images/2017041416031418622bb6242e.jpg" /></li>
+					</ul>
+				</div>
+
+				<div class="topic_content content" id="recommend_content">
+					<!--日历-->
+					<!--<div class="recommend_calendarTime" id="iframe">
+						<div class="calendarTime">
+							<input type="text" value="出游日历" readonly id="J-xl" class="dateTime" />
+							<i class="icon iconfont iconRili icon-calendar"></i>
+							<i class="icon iconfont iconDrop icon-jiantou-copy-copy-copy"></i>
+						</div>
+						<div id="iframepage" class="iframepage">
+							<div region="center" style="height:15rem;">
+								<div class="easyui-fullCalendar" style="overflow: hidden;height: 440px;" fit="true" id="calendar"></div>
+							</div>
+						</div>
+					</div>-->
+					<div class="recommend_list ">
+						<img src="images/eb7bde45-6792-4ab4-b3ca-9e34db84c61e.jpg" />
+						<div class="recommend_piece">
+							<p class="recommend_piece_c">
+								<span class="">￥</span>
+								<span class="">5980</span>
+								<span class="">起</span>
+							</p>
+						</div>
+						<div class="recommend_num">
+							累计报名人数：21人
+						</div>
+						<h4 class="recommend_title">【早鸟特惠】西双版纳雨林穿梭，一起体验成长</h4>
+						<p class="recommend_detail">试想 张开眼睛，前方是一棵大树直上苍天 左手摘下一片芭蕉，叶上的水珠被晃动滴在脸上 右手抓住一根古藤，听藤上的枝叶诉说雨林故事 左脚越过已经腐朽的却长满了木耳和蘑菇的树干 右脚踏上长满了绿色青苔的石头</p>
+						<div class="recommend_label">
+							<span>国内游</span>
+							<span>西双版纳傣族自治州景洪市</span>
+							<span>6-18岁</span>
+						</div>
+					</div>
+					<div class="recommend_list ">
+						<img src="images/eb7bde45-6792-4ab4-b3ca-9e34db84c61e.jpg" />
+						<div class="recommend_piece">
+							<p class="recommend_piece_c">
+								<span class="">￥</span>
+								<span class="">5980</span>
+								<span class="">起</span>
+							</p>
+						</div>
+						<div class="recommend_num">
+							累计报名人数：21人
+						</div>
+						<h4 class="recommend_title">【早鸟特惠】西双版纳雨林穿梭，一起体验成长</h4>
+						<p class="recommend_detail">试想 张开眼睛，前方是一棵大树直上苍天 左手摘下一片芭蕉，叶上的水珠被晃动滴在脸上 右手抓住一根古藤，听藤上的枝叶诉说雨林故事 左脚越过已经腐朽的却长满了木耳和蘑菇的树干 右脚踏上长满了绿色青苔的石头</p>
+						<div class="recommend_label">
+							<span>国内游</span>
+							<span>西双版纳傣族自治州景洪市</span>
+							<span>6-18岁</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!--***-->
+
+		</div>
+	</body>
+
+</html>

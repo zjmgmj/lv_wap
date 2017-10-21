@@ -1,0 +1,132 @@
+#date_container {
+  width: 100%;
+  height: 100%;
+}
+.actlist {
+  width: 94%;
+  margin: 0.5rem auto;
+  height: 100%;
+}
+.actlist .actlist_con {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+.actlist .actlist_con .actlist_pic {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.actlist .actlist_con .actlist_pic span {
+  display: block;
+}
+.actlist .actlist_con .actlist_pic .adimg {
+  width: 100%;
+  height: 100%;
+}
+.actlist .actlist_con .actlist_pic .adimg img {
+  width: 100%;
+}
+.actlist .actlist_con .actlist_pic .act_saled {
+  position: absolute;
+  right: 0;
+  top: 2rem;
+  z-index: 2;
+  min-width: 5rem;
+  text-align: center;
+  line-height: 1.2rem;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  color: #fff;
+  font-size: 0.6rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding-left: 0.5rem;
+}
+.actlist .actlist_con .actlist_pic .act_status_yes {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  bottom: 1rem;
+  text-align: center;
+  height: 2.3rem;
+}
+.actlist .actlist_con .actlist_pic .act_status_yes .act_price {
+  min-width: 4rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  color: #fff;
+  font-size: 0.8rem;
+  background: #ff931b;
+}
+.actlist .actlist_con .actlist_pic .act_status_yes .act_price img {
+  width: 0.33rem;
+}
+.actlist .actlist_con .actlist_pic .act_status_yes .act_price .small_font {
+  font-size: 0.52rem;
+}
+.actlist .actlist_con .actlist_pic .act_status_yes .act_back {
+  min-width: 4rem;
+  text-align: center;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  color: #ff931b;
+  font-size: 0.52rem;
+  background: #fff;
+}
+.actlist .actlist_con .actlist_pic .act_status_no {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  bottom: 1rem;
+  text-align: center;
+  height: 1.5rem;
+  min-width: 4rem;
+  background: #999;
+  color: #fff;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+}
+.actlist .actlist_tit {
+  width: 100%;
+  height: 3.1rem;
+  color: #333;
+}
+.actlist .actlist_tit h1 {
+  width: 100%;
+  height: 1rem;
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.actlist .actlist_tit p {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  padding-top: 0.3rem;
+  color: #999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.6rem;
+}
+.actlist .actlist_icon {
+  width: 100%;
+  height: 1.5rem;
+}
+.actlist .actlist_icon span {
+  display: block;
+  float: left;
+  background-color: #06c1ae;
+  color: #FFFFFF;
+  padding: 0 0.3rem;
+  height: 1rem;
+  line-height: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 0.2rem;
+  font-size: 0.56rem;
+}
+/*# sourceMappingURL=actlist.css.map */

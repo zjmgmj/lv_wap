@@ -1,0 +1,560 @@
+body {
+  padding-bottom: 2.4rem;
+}
+.info_header {
+  width: 100%;
+  height: 2rem;
+  background-color: #FFFFFF;
+  position: relative;
+  line-height: 2rem;
+}
+.info_header .lefta {
+  display: block;
+  position: absolute;
+  left: 3%;
+  top: 0;
+  width: 10%;
+  color: #8bc43f;
+  font-size: 0.8rem;
+  z-index: 3;
+}
+.info_header .righta {
+  display: block;
+  position: absolute;
+  right: 3%;
+  top: 0;
+  width: 20%;
+  text-align: right;
+  color: #fca242;
+  font-size: 0.8rem;
+  z-index: 3;
+}
+.info_header .righta i {
+  font-size: 0.6rem;
+}
+.info_header h1 {
+  color: #000000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+.acttime,
+.Tchoose {
+  width: 94%;
+  padding: 0 3%;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.6rem;
+  background-color: #07c1c0;
+  color: #FFFFFF;
+}
+.addperson {
+  background-color: #FFFFFF;
+}
+.Tchoose {
+  padding: 0.5rem 3%;
+}
+.travel {
+  width: 100%;
+  height: 100%;
+  font-size: 0.65rem;
+}
+.travel .T-title {
+  width: 94%;
+  padding: 0 3%;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #f0f0f0;
+  color: #06c1ae;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.travel .textarea {
+  width: 94%;
+  height: 100%;
+  padding: 0.5rem 3%;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #f0f0f0;
+}
+.travel .textarea textarea {
+  width: 100%;
+  min-height: 2rem;
+}
+.travel .T-con {
+  width: 94%;
+  padding: 0 3%;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #f0f0f0;
+  height: 2rem;
+  line-height: 2rem;
+}
+.travel .T-con .spantext {
+  display: block;
+  float: left;
+  width: 70%;
+}
+.travel .T-con .spantext i {
+  color: #db998b;
+}
+.travel .T-con a {
+  display: block;
+  float: right;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  margin-top: 0.3rem;
+  padding: 0 0.5rem;
+  background-color: #ffa639;
+  color: #FFFFFF;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+}
+.travel .T-con .context {
+  width: 20%;
+  float: left;
+}
+.travel .T-con .spaninput {
+  float: left;
+  width: 80%;
+}
+.travel .T-con .icon-202 {
+  float: right;
+  color: #cfcfcf;
+}
+.travel .T-con .default_color {
+  color: #cfcfcf;
+}
+.travel .Travel-choose {
+  width: 94%;
+  padding: 0 3%;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #f0f0f0;
+  position: relative;
+}
+.travel .Travel-choose .chooseperson {
+  width: 90%;
+  height: 2rem;
+  line-height: 2rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+.travel .Travel-choose .chooseperson span {
+  display: block;
+  float: left;
+}
+.travel .Travel-choose .chooseperson .age {
+  width: 30%;
+}
+.travel .Travel-choose .chooseperson .age-name {
+  width: 60%;
+}
+.travel .Travel-choose .chooseperson:last-child {
+  border: none;
+}
+.travel .Travel-choose .edit_age {
+  width: 10%;
+  height: 2rem;
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  z-index: 3;
+  text-align: right;
+  margin-top: -1rem;
+  line-height: 2rem;
+  color: #cfcfcf;
+}
+.tips {
+  width: 94%;
+  padding: 0 3%;
+  height: 2rem;
+  line-height: 2rem;
+  background-color: #f8f8f8;
+  font-size: 0.6rem;
+  color: #666666;
+}
+.tips i {
+  color: #4b808e;
+}
+.pay {
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  position: fixed;
+  max-wdith: 640px;
+  min-wdith: 320px;
+  left: 0;
+  bottom: 0;
+}
+.pay span {
+  width: 70%;
+  display: block;
+  height: 2rem;
+  background-color: #000000;
+  color: #FFFFFF;
+  float: left;
+  font-size: 0.65rem;
+  text-align: center;
+}
+.pay span i {
+  font-size: 0.56rem;
+  font-style: normal;
+}
+.pay span em {
+  color: #f7a446;
+  font-style: normal;
+}
+.pay a {
+  display: block;
+  width: 30%;
+  float: left;
+  background-color: #06c1ae;
+  color: #FFFFFF;
+  text-align: center;
+}
+.yixiu {
+  width: 100%;
+  height: 100%;
+}
+.yixiu p {
+  width: 100%;
+  text-align: center;
+  color: #9c9c9c;
+  font-size: 0.6rem;
+}
+.yixiu p img {
+  padding-top: 8rem;
+  width: 30%;
+  padding-bottom: 0.4rem;
+}
+.havetravel {
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+.havetravel .travel-person {
+  width: 100%;
+  height: 3rem;
+  border-bottom: 1px solid #d5d5d5;
+  position: relative;
+}
+.havetravel .travel-person div {
+  float: left;
+}
+.havetravel .travel-person .person-left {
+  width: 10%;
+  text-align: center;
+  height: 3rem;
+  line-height: 3rem;
+  background-color: #f8f8f8;
+}
+.havetravel .travel-person .person-left a {
+  font-size: 0.8rem;
+  color: #c4c4c4;
+}
+.havetravel .travel-person .person-middle {
+  width: 75%;
+  height: 2rem;
+  padding: 0.3rem 2.5%;
+}
+.havetravel .travel-person .person-middle p {
+  width: 100%;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 0.65rem;
+}
+.havetravel .travel-person .person-middle .firstline span {
+  display: block;
+  float: left;
+  height: 1.2rem;
+}
+.havetravel .travel-person .person-middle .firstline .idname {
+  width: 25%;
+}
+.havetravel .travel-person .person-middle .firstline .idcertificate {
+  width: 75%;
+}
+.havetravel .travel-person .person-middle .secondline span {
+  float: left;
+  display: block;
+  height: 1.2rem;
+}
+.havetravel .travel-person .person-middle .secondline .ifadult {
+  width: 15%;
+}
+.havetravel .travel-person .person-middle .secondline .sex {
+  width: 10%;
+}
+.havetravel .travel-person .person-middle .secondline .idcode {
+  width: 75%;
+}
+.havetravel .travel-person .person-right {
+  width: 10%;
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  height: 2rem;
+  margin-top: -1rem;
+  line-height: 2rem;
+  text-align: right;
+}
+.havetravel .travel-person .person-right input {
+  -webkit-opacity: 0;
+  opacity: 0;
+  position: absolute;
+  right: 3%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.havetravel .travel-person .person-right i {
+  color: #c4c4c4;
+  font-size: 0.8rem;
+}
+.havetravel .travel-person .person-right i.checkedbox {
+  color: #ffa642;
+}
+.submit {
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.7rem;
+  color: #FFFFFF;
+  background-color: #999999;
+  text-align: center;
+  position: fixed;
+  max-wdith: 640px;
+  min-wdith: 320px;
+  left: 0;
+  bottom: 0;
+}
+.add_info_header {
+  background: #06c1ae;
+}
+.add_info_header h1,
+.add_info_header .lefta {
+  color: #fff;
+}
+.editinfo {
+  width: 90%;
+  margin: 0 5%;
+}
+.editinfo {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border-bottom: 1px #e5e5e5 solid;
+  font-size: 0.5rem;
+}
+.editinfo:last-child {
+  border-bottom: none;
+}
+.editinfo .left_edit {
+  width: 24%;
+}
+.editinfo .right_edit {
+  float: right;
+  position: relative;
+  width: 76%;
+  height: 100%;
+}
+.editinfo .right_edit .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+/*----------用来移除向下箭头----------*/
+.editinfo .right_edit input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+/*----------用来移除叉叉按钮----------*/
+.editinfo .right_edit input[type="date"]::-webkit-clear-button {
+  opacity: 0;
+}
+.editinfo input,
+.editinfo select {
+  width: 100%;
+  outline: none;
+  color: #666;
+  border: none;
+}
+.editinfo input option,
+.editinfo select option {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  border: none;
+}
+.editinfo select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.editinfo select::-ms-expand {
+  display: none;
+}
+.editinfo input {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  background: none;
+}
+.code_btn {
+  width: 15px;
+}
+.improve_information {
+  width: 94%;
+  padding: 0 3%;
+  height: 2rem;
+  line-height: 2rem;
+  border-bottom: 1px #f5f5f5 solid;
+  background-color: #FFFFFF;
+}
+.improve_information input {
+  height: 1.9rem;
+}
+.improve_information .code_btn {
+  width: 3rem;
+  text-align: center;
+}
+.improve_information .f_l {
+  float: left;
+}
+.improve_information .improve_tel {
+  width: 80%;
+}
+.improve_information .improve_code {
+  width: 65%;
+}
+.improve_information .code_btn {
+  width: 15%;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  display: block;
+  background: #06c1ae;
+  border-radius: 0.2rem;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+.improve_information .improve_text {
+  width: 20%;
+  text-align: left;
+}
+.improve_information:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.bind_tel_submit {
+  clear: both;
+  width: 15rem;
+  margin: 1rem auto 0;
+  display: block;
+  border-radius: 0.5rem;
+  color: #fff;
+  height: 2rem;
+  background: #06c1ae;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 0.8rem;
+}
+.tishi {
+  font-size: 0.5rem;
+  color: #999;
+  padding: 0.5rem 0;
+  box-sizing: border-box;
+  padding-left: 1rem;
+}
+.city-block {
+  width: 94%;
+  padding: 0 3%;
+  height: 2rem;
+  line-height: 2rem;
+  border-bottom: 1px #f5f5f5 solid;
+  font-size: 0.65rem;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+.editinfo_travelers {
+  height: 3rem;
+  border-bottom: 1px #e5e5e5 solid;
+  font-size: 0.5rem;
+  width: 90%;
+  margin: 0 5%;
+  box-sizing: border-box;
+  padding: 0.5rem 0;
+  line-height: 1rem;
+  color: #666;
+}
+.editinfo_travelers .right_edit {
+  float: right;
+  position: relative;
+  width: 76%;
+  height: 100%;
+}
+.editinfo_travelers .right_edit .icon {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  z-index: 1;
+}
+.editinfo_travelers .left_edit {
+  width: 24%;
+}
+.editinfo_travelers .left_edit .left_edit_m,
+.editinfo_travelers .left_edit .left_edit_w {
+  width: 3rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  border-radius: 1rem;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+.editinfo_travelers .left_edit .left_edit_m span,
+.editinfo_travelers .left_edit .left_edit_w span {
+  width: 50%;
+  height: 50%;
+  height: 100%;
+  display: inline-block;
+  font-size: 0.05rem;
+}
+.editinfo_travelers .left_edit .left_edit_m {
+  background: #5abaed;
+}
+.editinfo_travelers .left_edit .left_edit_m span:last-child {
+  background: #82cbeb;
+}
+.editinfo_travelers .left_edit .left_edit_w {
+  background: #fe7c62;
+}
+.editinfo_travelers .left_edit .left_edit_w span:last-child {
+  background: #ffa08d;
+}
+.editinfo_travelers .font_06 {
+  font-size: 0.6rem;
+}
+.add_travelers {
+  width: 80%;
+  margin: 2rem 10% 0;
+  text-align: center;
+  background: #06c1ae;
+  color: #fff;
+  height: 2rem;
+  line-height: 2rem;
+  border-radius: 3rem;
+  font-size: .7rem;
+}
+.add_travelers .icon {
+  font-size: .8rem;
+}
+/*# sourceMappingURL=info.css.map */

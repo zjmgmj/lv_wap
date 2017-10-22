@@ -39,7 +39,23 @@
   font-size: .3rem;
   padding: 0 .1rem;
 }
+.per_title .font_05 {
+  font-size: .5rem;
+}
 .border_none {
   border: none;
+}
+.color_06c1ae {
+  color: #06c1ae;
+}
+.add_info_header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 999;
+}
+.addperson {
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=per_inform.css.map */

@@ -107,13 +107,46 @@
 				</span>
 				<span class="left_edit">年级</span>
 			</div>
-			<h3 class="per_title"><a href=""><i class="icon iconfont icon-jia"></i>添加</a><span>孩子信息</span> </h3>
+			<h3 class="per_title">
+				<a href=""><i class="icon iconfont icon-jia"></i>添加</a>
+				<span>孩子信息 <span class="color_06c1ae font_05">(2个孩子)</span></span> 
+			</h3>
+			<div class="editinfo ">
+				<span class="right_edit">
+					<input type="text"  id="" value="" placeholder="请输入孩子名字"/>
+				</span>
+				<span class="left_edit color_06c1ae">孩子名字</span>
+			</div>
+			<div class="editinfo">
+				<span class="right_edit">
+					<select name="">
+						<option value="男">男</option>
+						<option value="女">女</option>
+					</select>
+					<div class="icon iconfont icon-202"></div>
+				</span>
+				<span class="left_edit">孩子性别</span>
+			</div>
+			<div class="editinfo ">
+				<span class="right_edit">
+					<input type="text"  id="input5" value="2017/01/01"/>
+					<div class="icon iconfont icon-202"></div>
+				</span>
+				<span class="left_edit">孩子生日</span>
+			</div>
 			<div class="submit">
 				<a href="#">提交</a>
 			</div>
 		</div>
 		<script>
 			$("#input4").shijian({
+				startYear: 1989,
+				val: 1989,
+				endYear: 2017,
+				Hour: false, //是否显示小时
+				Minute: false, //是否显分钟
+			});
+			$("#input5").shijian({
 				startYear: 1989,
 				val: 1989,
 				endYear: 2017,

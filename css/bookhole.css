@@ -1,0 +1,60 @@
+.bookhole {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+.bookhole p {
+  width: 94%;
+  padding: 0 3%;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 0.65rem;
+}
+.submit_form {
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  margin-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+.submit_form .groupform {
+  width: 94%;
+  padding: 0 3%;
+  height: 2rem;
+  line-height: 2rem;
+  border-bottom: 1px solid #F5F5F5;
+}
+.submit_form .groupform span {
+  display: block;
+  float: left;
+}
+.submit_form .groupform .left_text {
+  width: 20%;
+}
+.submit_form .groupform .right_input {
+  width: 80%;
+}
+.submit_form .groupform .right_input input {
+  width: 100%;
+  height: 1rem;
+  margin-top: 0.5rem;
+  line-height: 1rem;
+  color: #000000;
+  font-size: 0.6rem;
+}
+.submit_form .btn {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1.8rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  background-color: #06c1ae;
+}
+.submit_form .btn button {
+  color: #FFFFFF;
+  font-size: 0.65rem;
+}
+/*# sourceMappingURL=bookhole.css.map */

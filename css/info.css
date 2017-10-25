@@ -356,6 +356,7 @@ body {
 .editinfo {
   width: 90%;
   margin: 0 5%;
+  clear: both;
 }
 .editinfo {
   height: 2.5rem;
@@ -567,5 +568,15 @@ body {
 }
 .add_travelers .icon {
   font-size: .8rem;
+}
+.delete_btn {
+  width: 100%;
+  padding: 0.3rem 0;
+  text-align: center;
+  height: 1rem;
+  line-height: 1rem;
+}
+.delete_btn button {
+  color: #06c1ae;
 }
 /*# sourceMappingURL=info.css.map */

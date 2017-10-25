@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-touch-fullscreen" content="yes" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+		<title>地址管理</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/addr.css">
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/info.css">
+	</head>
+
+	<body>
+		<div class="add_addr">
+			<div class="info_header add_info_header">
+				<a class="lefta icon iconfont icon-jiantou" href="javascript:history.go(-1)"></a>
+				<h1>地址管理</h1>
+			</div>
+			<!--没有地址列表-->
+			<div class="none_new_add">
+				<p class="icon iconfont icon-kulian"></p>
+				<p>暂无收货地址</p>
+			</div>
+			<!--地址列表-->
+			<div class="addr_list" style="display: none;">
+				<ul>
+					<li>
+						<div class="addr_name">
+							<span>宫明娟</span>
+							<span>18260052952</span>
+						</div>
+						<div class="addr_area">
+							<span class="addr_icon_green">家</span>
+							<span>江苏省 常州市 新北区</span>
+						</div>
+						<div class="addr_set">
+							<span class="set_left">
+						 	    	<input type="radio" id="radio_btn" class="checked" name="choosed" />
+						 	    	<label for="radio_btn">设为默认</label>
+						 	    </span>
+							<span class="right_set">
+						 	    	<a href="javascript:;"><i class="icon iconfont icon-bianji1"></i><i>编辑</i></a>
+						 	    	<a href="javascript:;"><i class="icon iconfont icon-delete"></i><i>删除</i></a>
+						 	    	
+						 	    </span>
+						</div>
+					</li>
+					<li>
+						<div class="addr_name">
+							<span>宫明娟</span>
+							<span>18260052952</span>
+						</div>
+						<div class="addr_area">
+							<span class="addr_icon_red">公司</span>
+							<span>江苏省 常州市 新北区</span>
+						</div>
+						<div class="addr_set">
+							<span class="set_left">
+						 	    	<input type="radio" id="radio_btn" name="choosed" />
+						 	    	<label for="radio_btn">设为默认</label>
+						 	    </span>
+							<span class="right_set">
+						 	    	<a href="javascript:;"><i class="icon iconfont icon-bianji1"></i><i>编辑</i></a>
+						 	    	<a href="javascript:;"><i class="icon iconfont icon-delete"></i><i>删除</i></a>
+						 	    	
+						 	    </span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="new_add_addr"><a href="add_addr.html"><i class="icon iconfont icon-quanjia"></i>新增收货地址</a></div>
+		</div>
+	</body>
+
+</html>

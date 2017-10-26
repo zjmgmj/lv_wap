@@ -1,40 +1,66 @@
+.addr_header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 2rem;
+    font-size: 0.65rem;
+    background: #06c1ae;
+    h1{
+        font-size: 0.65rem;
+        font-weight: normal;
+        width: 100%;
+        height: 2rem;
+        text-align: center;
+        line-height: 2rem;
+        color: #FFFFFF;
+    }
+    .lefta {
+        color: #fff;
+        position: absolute;
+        left: 3%;
+        top: 0;
+        line-height: 2rem;
+    }
+}
 .add_addr {
     width: 100%;
     height: 100%;
-    .none_new_add{
+    padding-top: 2rem;
+    .none_new_add {
         width: 100%;
         height: 100%;
         margin-top: 3rem;
         text-align: center;
         font-size: 0.8rem;
         color: #999999;
-        p{
+        p {
             margin-top: 0.5rem;
         }
-        .icon-kulian{
+        .icon-kulian {
             font-size: 2rem;
         }
     }
     .addr_list {
         width: 100%;
         height: 100%;
-        li{
+        li {
             width: 94%;
             padding: 0.5rem 3%;
             margin-bottom: 0.5rem;
-            background-color:#FFFFFF;
-            .addr_name{
+            background-color: #FFFFFF;
+            .addr_name {
                 width: 100%;
                 height: 1rem;
                 line-height: 1rem;
                 font-size: 0.65rem;
-                span{
+                span {
                     display: block;
                     float: left;
                     margin-right: 0.5rem;
                 }
             }
-            .addr_area{
+            .addr_area {
                 width: 100%;
                 height: 1rem;
                 line-height: 1rem;
@@ -42,7 +68,8 @@
                 color: #999999;
                 padding-bottom: 0.5rem;
                 border-bottom: 1px solid #F5F5F5;
-                .addr_icon_green,.addr_icon_red{
+                .addr_icon_green,
+                .addr_icon_red {
                     padding: 0.1rem 0.5rem;
                     -webkit-border-radius: 0.25rem;
                     border-radius: 0.25rem;
@@ -51,34 +78,34 @@
                     font-size: 0.52rem;
                     color: #FFFFFF;
                 }
-                .addr_icon_green{
-                    background-color:#06c1ae;
+                .addr_icon_green {
+                    background-color: #06c1ae;
                 }
-                .addr_icon_red{
-                    background-color:#fc4b1f;
+                .addr_icon_red {
+                    background-color: #fc4b1f;
                 }
             }
-            .addr_set{
+            .addr_set {
                 width: 100%;
                 height: 1rem;
                 line-height: 1rem;
                 padding-top: 0.5rem;
-                span{
+                span {
                     display: block;
                     float: left;
                 }
-                .set_left{
+                .set_left {
                     width: 50%;
                     font-size: 0.56rem;
                 }
-                .right_set{
+                .right_set {
                     float: right;
                     color: #999999;
                     font-size: 0.6rem;
-                    a{
+                    a {
                         color: #999999;
                     }
-                    .icon{
+                    .icon {
                         padding-right: 0.2rem;
                         text-align: right;
                         font-size: 0.7rem;
@@ -87,7 +114,7 @@
             }
         }
     }
-    .new_add_addr{
+    .new_add_addr {
         width: 100%;
         height: 2rem;
         line-height: 2rem;
@@ -99,15 +126,113 @@
         left: 0;
         bottom: 0;
         z-index: 999;
-        a{
+        a {
             display: block;
             width: 100%;
             height: 100%;
         }
-        i{
+        i {
             font-size: 0.7rem;
             line-height: 2rem;
             padding-right: 0.3rem;
         }
     }
 }
+.editAddr {
+    width: 100%;
+    height: 100%;
+    padding-top: 2rem;
+    .sheet {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #FFFFFF;
+        .item {
+            width: 94%;
+            height: 1rem;
+            line-height: 1rem;
+            padding: 0.5rem 3%;
+            border-bottom: 1px solid #F5F5F5;
+            clear: both;
+            .item_text{
+                width: 25%;
+                display: block;
+                float: left;
+                font-size: 0.65rem;
+            }
+            input{
+                width: 70%;
+                float: left;
+                padding: 0 2.5%;
+                height: 1rem;
+                line-height: 1rem;
+                font-size: 0.6rem;
+            }
+            
+        }
+        .l-item{
+            width: 94%;
+            padding: 0.5rem 3%;
+            min-height: 3rem;
+            line-height: 1rem;
+            border-bottom: 1px solid #F5F5F5;
+            clear: both;
+            .l_item_text{
+                width: 25%;
+                display: block;
+                float: left;
+                font-size: 0.65rem;
+            }
+            textarea{
+                width: 70%;
+                float: left;
+                padding: 0 2.5%;
+                min-height: 2rem;
+                line-height: 1rem;
+                font-size: 0.6rem;
+            }
+        }
+        .c-item{
+            width: 94%;
+            height: 1rem;
+            line-height: 1rem;
+            padding: 0.5rem 3%;
+            .c_item_text{
+                width: 20%;
+                display: block;
+                float: left;
+                font-size: 0.65rem;
+                margin-right: 5%;
+            }
+            .btn_radio{
+                display: block;
+                float: left;
+                margin-right: 5%;
+            }
+        }
+    }
+    .submit{
+        width: 90%;
+        margin: 0 auto;
+        height: 2rem;
+        line-height: 2rem;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 3rem;
+        -webkit-border-radius: 0.25rem;
+        border-radius: 0.25rem;
+        background-color: #06c1ae;
+    }
+    
+}
+.toolbar-inner{
+    a{
+        font-size: 0.7rem;
+    }
+    .title{
+        font-size: 0.7rem;
+    }
+}
+.picker-item{
+        font-size: 0.7rem;
+    }

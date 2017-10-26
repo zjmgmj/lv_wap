@@ -1,6 +1,32 @@
+.addr_header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 2rem;
+  font-size: 0.65rem;
+  background: #06c1ae;
+}
+.addr_header h1 {
+  font-size: 0.65rem;
+  font-weight: normal;
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  color: #FFFFFF;
+}
+.addr_header .lefta {
+  color: #fff;
+  position: absolute;
+  left: 3%;
+  top: 0;
+  line-height: 2rem;
+}
 .add_addr {
   width: 100%;
   height: 100%;
+  padding-top: 2rem;
 }
 .add_addr .none_new_add {
   width: 100%;
@@ -111,5 +137,99 @@
   font-size: 0.7rem;
   line-height: 2rem;
   padding-right: 0.3rem;
+}
+.editAddr {
+  width: 100%;
+  height: 100%;
+  padding-top: 2rem;
+}
+.editAddr .sheet {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.editAddr .sheet .item {
+  width: 94%;
+  height: 1rem;
+  line-height: 1rem;
+  padding: 0.5rem 3%;
+  border-bottom: 1px solid #F5F5F5;
+  clear: both;
+}
+.editAddr .sheet .item .item_text {
+  width: 25%;
+  display: block;
+  float: left;
+  font-size: 0.65rem;
+}
+.editAddr .sheet .item input {
+  width: 70%;
+  float: left;
+  padding: 0 2.5%;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.6rem;
+}
+.editAddr .sheet .l-item {
+  width: 94%;
+  padding: 0.5rem 3%;
+  min-height: 3rem;
+  line-height: 1rem;
+  border-bottom: 1px solid #F5F5F5;
+  clear: both;
+}
+.editAddr .sheet .l-item .l_item_text {
+  width: 25%;
+  display: block;
+  float: left;
+  font-size: 0.65rem;
+}
+.editAddr .sheet .l-item textarea {
+  width: 70%;
+  float: left;
+  padding: 0 2.5%;
+  min-height: 2rem;
+  line-height: 1rem;
+  font-size: 0.6rem;
+}
+.editAddr .sheet .c-item {
+  width: 94%;
+  height: 1rem;
+  line-height: 1rem;
+  padding: 0.5rem 3%;
+}
+.editAddr .sheet .c-item .c_item_text {
+  width: 20%;
+  display: block;
+  float: left;
+  font-size: 0.65rem;
+  margin-right: 5%;
+}
+.editAddr .sheet .c-item .btn_radio {
+  display: block;
+  float: left;
+  margin-right: 5%;
+}
+.editAddr .submit {
+  width: 90%;
+  margin: 0 auto;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 3rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  background-color: #06c1ae;
+}
+.toolbar-inner a {
+  font-size: 0.7rem;
+}
+.toolbar-inner .title {
+  font-size: 0.7rem;
+}
+.picker-item {
+  font-size: 0.7rem;
 }
 /*# sourceMappingURL=addr.css.map */

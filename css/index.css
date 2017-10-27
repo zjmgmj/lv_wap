@@ -1,8 +1,12 @@
 .area {
   color: #666;
-  opacity: .8;
-  width: 3rem;
+  width: auto;
   font-size: .6rem;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.25rem;
+  z-index: 333;
+  background-color: #fff;
 }
 .personal {
   opacity: .8;
@@ -15,6 +19,7 @@
 .search {
   background: url(../images/searchbg.png) no-repeat center;
   width: 8rem;
+  margin-left: 4rem;
   background-size: 100% 100%;
   color: #666;
   position: relative;
@@ -30,7 +35,7 @@
   position: absolute;
   right: .4rem;
   top: 0;
-  color: #8bc53f;
+  color: #06c1ae;
 }
 .detail_header div {
   background: #fff;
@@ -91,7 +96,7 @@
 }
 .index_content .topic .icon {
   font-size: .8rem;
-  color: #8bc53f;
+  color: #06c1ae;
 }
 .index_content .topic_classification {
   width: 100%;
@@ -147,6 +152,7 @@
 }
 .index_content .topic_content .recommend_list .recommend_piece .recommend_piece_c {
   padding: .2rem;
+  color: #FFFFFF;
 }
 .index_content .topic_content .recommend_list .recommend_piece .bg_white {
   color: #ff931b;
@@ -190,7 +196,7 @@
   margin-top: .3rem;
 }
 .index_content .topic_content .recommend_list .recommend_label span {
-  background: #8bc53f;
+  background: #06c1ae;
   border-radius: .2rem;
   color: #fff;
   padding: .1rem .2rem;
@@ -198,3 +204,4 @@
   text-align: center;
   font-size: .5rem;
 }
+/*# sourceMappingURL=index.css.map */

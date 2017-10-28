@@ -1,0 +1,123 @@
+.pay {
+  width: 100%;
+  height: 100%;
+}
+.pay .pay_title {
+  width: 94%;
+  height: 2rem;
+  padding: 0.5rem 3%;
+  background-color: #06c1ae;
+  color: #FFFFFF;
+}
+.pay .pay_title h1,
+.pay .pay_title p {
+  line-height: 1rem;
+}
+.pay .pay_title h1 {
+  font-size: 0.7rem;
+}
+.pay .pay_title p {
+  font-size: 0.6rem;
+}
+.pay .paymoney {
+  width: 94%;
+  padding: 0 3%;
+  height: 100%;
+  background-color: #FFFFFF;
+  text-align: center;
+  color: #333333;
+  font-size: 0.6rem;
+}
+.pay .paymoney p {
+  width: 100%;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  border-bottom: 1px solid #F5F5F5;
+}
+.pay .paymoney p span {
+  display: block;
+  height: 1.6rem;
+  line-height: 1.6rem;
+}
+.pay .paymoney p .span_text {
+  float: left;
+}
+.pay .paymoney p .span_right {
+  float: right;
+  color: red;
+  font-size: 0.56rem;
+}
+.pay .paymoney p .span_right i {
+  color: #333333;
+}
+.pay .paymoney .pay-tit {
+  position: relative;
+}
+.pay .pay-method {
+  width: 100%;
+  height: 100%;
+  margin: 0.5rem auto;
+}
+.pay .pay-method ul {
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+.pay .pay-method ul .pay-border {
+  border-bottom: 1px solid #F5F5F5;
+}
+.pay .pay-method ul li {
+  width: 94%;
+  margin: 0 auto;
+  height: 2.6rem;
+  line-height: 2.6rem;
+}
+.pay .pay-method ul li .icon-weixin {
+  color: #09ba07;
+}
+.pay .pay-method ul li .icon-zhifubao {
+  color: #0db4e8;
+}
+.pay .pay-method ul li .yinlian img {
+  height: 1rem;
+  float: left;
+  margin-top: 0.78rem;
+}
+.pay .pay-method ul li div {
+  float: left;
+}
+.pay .pay-method ul li div i {
+  color: #333333;
+  padding-left: 0.35rem;
+  font-size: 0.65rem;
+}
+.pay .pay-method ul li .paymethod-icon {
+  width: 80%;
+  font-size: 0.8rem;
+}
+.pay .pay-method ul li .paymethod-choose {
+  width: 20%;
+  height: 2rem;
+}
+.pay .pay-method ul li .paymethod-choose input {
+  float: right;
+  margin-top: 0.6rem;
+}
+.pay .pay-method .paybtn {
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #06c1ae;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.pay .pay-method .paybtn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=pay.css.map */

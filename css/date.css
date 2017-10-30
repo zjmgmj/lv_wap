@@ -56,11 +56,18 @@
   color: #06c1ae;
   text-align: right;
 }
+/*2017-10-30 日历价格超出修改开始*/
 .date_content .date_num li .date_money {
   text-align: right;
   color: #f75934;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+
 .date_content .date_num li .date_money img {
   width: 0.3rem;
+  float: left;
 }
+/*2017-10-30 日历价格超出修改结束*/
 /*# sourceMappingURL=date.css.map */

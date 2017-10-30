@@ -69,6 +69,69 @@
   float: left;
   margin-right: 0.2rem;
 }
+/*2017-10-30 早鸟价提示开始*/
+.sale_youhui{
+	width: 94%;
+	height: 100%;
+	padding: 0.5rem 3%;
+	margin-top: 0.5rem;
+	overflow: hidden;
+}
+.sale_youhui div{
+	float: left;
+	height: 2rem;
+	background-color: #FFFFFF;
+}
+.sale_youhui .early_left{
+	width: 15%;
+	height: 1rem;
+	
+	line-height: 1rem;
+	text-align: center;
+	font-size: 0.65rem;
+	/*border-right: 1px solid #F5F5F5;
+	color: #06c1ae;
+	*/
+	background-color: #06c1ae;
+	-webkit-border-radius: 0.25rem;
+	border-radius: 0.25rem;
+	color: #FFFFFF;
+	
+}
+.sale_youhui .early_mid{
+	width: 62%;
+	height: 1rem;
+	line-height: 1rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #999999;
+	font-size: 0.6rem;
+	margin-left: 2%;
+}
+.sale_youhui .early_mid i{
+	color: red;
+}
+
+.sale_youhui .early_right{
+	width: 20%;
+	height: 1rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #06c1ae;
+	-webkit-border-radius: 0.5rem;
+	border-radius: 0.5rem;
+}
+.sale_youhui .early_right a{
+	color: #06c1ae;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 1rem;
+	font-size: 0.56rem;
+}
+/*2017-10-30 早鸟价提示结束*/
 .bgfbox {
   background: #fff;
   color: #999;

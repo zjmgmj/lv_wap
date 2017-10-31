@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>选择城市</title>
+		<include file="Public/head"/>
+	    <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/login.css" />
+	    <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/info.css" />
+	    <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/LArea.css" />
+	</head>
+
+	<body>
+		<!--2017-10-31城市选择修改-->
+        <div class="info_header add_info_header">
+			<a class="lefta icon iconfont icon-jiantou" href="javascript:history.go(-1)"></a>
+			<h1>选择城市</h1>
+		</div>
+		<div class="login_p selecity">
+			<!--<div class="content-block">
+                        <input id="city1" class="city1" type="text" readonly="" placeholder="请选择所在城市" value="" />
+                        <input id="value1" type="hidden" value="20,234,504" />
+                    </div>-->
+            <h1>选择城市</h1>
+			<select name="cityid" id="cityid" class='city_check'>
+				<volist name="list" id="val">
+					<option value="{$val.id}">{$val.city}</option>
+				</volist>
+			</select>
+			<div class="right_city_i icon iconfont icon-202"></div>
+		</div>
+		<div class="sele_city_btn">提交</div>
+	</body>
+	<include file="Public/footer"/>
+    <script src="__PUBLIC__/home/js/login.js" type="text/javascript" charset="utf-8"></script>
+</html>

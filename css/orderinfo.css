@@ -3,18 +3,21 @@
   height: 100%;
   padding-bottom: 2.6rem;
 }
+/*2017-11-01修改开始*/
 .order_info .title {
   width: 100%;
+  max-width: 640px;
+  min-width: 320px;
   background-color: #06c1ae;
   color: #FFFFFF;
   height: 2rem;
   line-height: 2rem;
   text-align: center;
   position: fixed;
-  left: 0;
   top: 0;
   z-index: 3;
 }
+/*2017-11-01修改结束*/
 .order_info .title a {
   position: absolute;
   left: 3%;
@@ -135,10 +138,18 @@
   border-bottom: 1px solid #F5F5F5;
   font-size: 0.6rem;
 }
+/*2017-11-01修改开始*/
 .order_info .order_des .info_list span {
   display: block;
   float: left;
+  width: 80%;
+  height: 2rem;
+  line-height: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+/*2017-11-01修改结束*/
 .order_info .order_des .info_list .info_list_text {
   width: 20%;
   float: left;

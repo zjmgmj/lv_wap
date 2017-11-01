@@ -2,17 +2,20 @@
     width: 100%;
     height: 100%;
     padding-bottom: 2.6rem;
+    /*2017-11-01修改开始*/
     .title {
         width: 100%;
+        max-width: 640px;
+        min-width: 320px;
         background-color: #06c1ae;
         color: #FFFFFF;
         height: 2rem;
         line-height: 2rem;
         text-align: center;
-        position: fixed;
-        left: 0;
+        position: fixed; 
         top: 0;
         z-index: 3;
+        /*2017-11-01修改结束*/
         a {
             position: absolute;
             left: 3%;
@@ -132,10 +135,18 @@
             line-height: 2rem;
             border-bottom: 1px solid #F5F5F5;
             font-size: 0.6rem;
+            /*2017-11-01修改开始*/
             span {
                 display: block;
                 float: left;
+                width:80%;
+                height: 2rem;
+                line-height: 2rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
+            /*2017-11-01修改结束*/
             .info_list_text {
                 width: 20%;
                 float: left;

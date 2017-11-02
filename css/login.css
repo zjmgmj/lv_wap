@@ -176,6 +176,7 @@
   max-width: 640px;
   min-width: 320px;
   z-index: 88;
+  background: #06c1ae;
 }
 .shide {
   position: fixed;

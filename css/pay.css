@@ -78,6 +78,11 @@
 .pay .pay-method ul li .icon-yue {
   color: red;
 }
+.pay .pay-method ul li .icon-yue em {
+  font-style: normal;
+  font-size: 0.56rem;
+  padding-left: 0.3rem;
+}
 .pay .pay-method ul li .icon-zhifubao {
   color: #0db4e8;
 }

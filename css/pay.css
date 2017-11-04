@@ -75,6 +75,9 @@
 .pay .pay-method ul li .icon-weixin {
   color: #09ba07;
 }
+.pay .pay-method ul li .icon-yue {
+  color: red;
+}
 .pay .pay-method ul li .icon-zhifubao {
   color: #0db4e8;
 }

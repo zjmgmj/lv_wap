@@ -72,19 +72,26 @@
   margin-top: 0.44rem;
 }
 .order_choose .order_choose_num ul {
-  height: 2rem;
+  height: 100%;
+  overflow: hidden;
   line-height: 2rem;
   background-color: #fff;
+  border-bottom: 1px solid #F5F5F5;
 }
 .order_choose .order_choose_num li {
   float: left;
   font-size: 0.6rem;
 }
 .order_choose .order_choose_num .order_name {
-  width: 35%;
+  width: 41%;
+  margin-right: 1%;
+  padding: 0.5rem 0;
+  line-height: 1rem;
 }
 .order_choose .order_choose_num .order_price {
-  width: 35%;
+  width: 28%;
+  height: 2rem;
+  text-align: center;
 }
 .order_choose .order_choose_num .order_price img {
   width: 0.36rem;
@@ -94,6 +101,7 @@
 }
 .order_choose .order_choose_num .order_edit {
   width: 30%;
+  height: 2rem;
 }
 .order_choose .order_choose_num .order_edit span {
   display: block;
@@ -122,7 +130,7 @@
   background-size: 100%;
 }
 .order_choose .order_choose_num .order_edit .hui_btn {
-  background-image: url(../images/jbtn_minus_gray.png);
+  background-image: url("../images/jbtn_minus_gray.png");
 }
 .order_choose .order_choose_num .order_edit .plus {
   width: 1rem;

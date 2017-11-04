@@ -69,69 +69,6 @@
   float: left;
   margin-right: 0.2rem;
 }
-/*2017-10-30 早鸟价提示开始*/
-.sale_youhui{
-	width: 94%;
-	height: 100%;
-	padding: 0.5rem 3%;
-	margin-top: 0.5rem;
-	overflow: hidden;
-}
-.sale_youhui div{
-	float: left;
-	height: 2rem;
-	background-color: #FFFFFF;
-}
-.sale_youhui .early_left{
-	width: 15%;
-	height: 1rem;
-	
-	line-height: 1rem;
-	text-align: center;
-	font-size: 0.65rem;
-	/*border-right: 1px solid #F5F5F5;
-	color: #06c1ae;
-	*/
-	background-color: #06c1ae;
-	-webkit-border-radius: 0.25rem;
-	border-radius: 0.25rem;
-	color: #FFFFFF;
-	
-}
-.sale_youhui .early_mid{
-	width: 62%;
-	height: 1rem;
-	line-height: 1rem;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	color: #999999;
-	font-size: 0.6rem;
-	margin-left: 2%;
-}
-.sale_youhui .early_mid i{
-	color: red;
-}
-
-.sale_youhui .early_right{
-	width: 20%;
-	height: 1rem;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	border: 1px solid #06c1ae;
-	-webkit-border-radius: 0.5rem;
-	border-radius: 0.5rem;
-}
-.sale_youhui .early_right a{
-	color: #06c1ae;
-	display: block;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	line-height: 1rem;
-	font-size: 0.56rem;
-}
-/*2017-10-30 早鸟价提示结束*/
 .bgfbox {
   background: #fff;
   color: #999;
@@ -312,6 +249,8 @@
 }
 .score {
   display: none;
+  width: 94%;
+  padding: 0 3%;
 }
 .score .score_top {
   border-bottom: .01rem solid #eeeeee;
@@ -371,6 +310,10 @@
   font-size: .3rem;
   color: #999;
 }
+.score .score_content .score_conten_detail .score_d {
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #f5f5f5;
+}
 .score .score_content .score_conten_detail .score_d p {
   line-height: 1rem;
   color: #666;
@@ -395,6 +338,29 @@
 }
 .score .score_content .score_conten_detail .score_d .score_d_bottom .great_icon span {
   padding: 0 .2rem;
+}
+.score .score_content .score_conten_detail .evalate_star {
+  width: 100%;
+  clear: both;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  background-color: #FFFFFF;
+}
+.score .score_content .score_conten_detail .evalate_star div {
+  float: left;
+}
+.score .score_content .score_conten_detail .evalate_star .star_left {
+  max-width: 30%;
+  overflow: hidden;
+  text-align: left;
+  font-size: 0.6rem;
+  margin-right: 3%;
+}
+.score .score_content .score_conten_detail .evalate_star .star_right {
+  width: 67%;
+}
+.score .score_content .score_conten_detail .evalate_star .star_right img {
+  height: 0.7rem;
 }
 .swiper-container {
   width: 100%;

@@ -489,7 +489,7 @@
 .share_other ul {
   width: 100%;
   max-width: 640px;
-  height: 2rem;
+  height: 3rem;
   padding: 0.5rem 0;
   position: fixed;
   bottom: 0;
@@ -500,25 +500,26 @@
 }
 .share_other ul li {
   color: #FFFFFF;
-  width: 50%;
+  width: 20%;
+  margin-left: 20%;
   float: left;
   text-align: center;
 }
 .share_other ul li p {
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 2rem;
+  height: 2rem;
   margin: 0 auto;
-  -webkit-border-radius: 0.7rem;
-  border-radius: 0.7rem;
+  -webkit-border-radius: 1rem;
+  border-radius: 1rem;
   background-color: #FFFFFF;
   text-align: center;
 }
 .share_other ul li p img {
-  height: 1.4rem;
+  height: 2rem;
 }
 .share_other ul li div {
-  height: 1rem;
-  line-height: 1rem;
-  font-size: 0.6rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  font-size: 0.8rem;
 }
 /*# sourceMappingURL=detail.css.map */

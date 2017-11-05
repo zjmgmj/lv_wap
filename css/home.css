@@ -138,7 +138,7 @@
   height: 100%;
 }
 .coupon-integral ul li {
-  width: 50%;
+  width: 40%;
   float: left;
 }
 .coupon-integral ul li a {
@@ -153,6 +153,20 @@
 }
 .coupon-integral ul li a:first-child {
   border-right: 1px solid #f2f2f2;
+}
+.coupon-integral ul .qiandao {
+  width: 20%;
+  float: left;
+  margin-top: -0.5rem;
+  height: 3rem;
+  background-color: #ea5245;
+  text-align: center;
+  color: #FFFFFF;
+}
+.coupon-integral ul .qiandao p {
+  height: 1rem;
+  padding-top: 0.5rem;
+  line-height: 1rem;
 }
 .home_content {
   margin-top: 0.5rem;

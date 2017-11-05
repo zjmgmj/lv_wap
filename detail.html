@@ -267,13 +267,13 @@
 			<div class="sh_mask"></div>
 			<ul>
 				<li>
-					<a href="#">
+					<a class="share_friend" href="javascript:;">
 						<p><img src="images/weixin.png" /></p>
 						<div>微信</div>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a class="share_many_friend" href="javascript:;">
 						<p><img src="images/friendshare.png" /></p>
 						<div>朋友圈</div>
 					</a>
@@ -303,6 +303,12 @@
     		});
     		$(".sh_mask").bind("click",function(){
     			$(".share_other").hide();
+    		});
+    		$(".share_many_friend").bind("click",function(){
+    			//分享代码
+    		});
+    		$(".share_friend").bind("click",function(){
+    			//分享代码
     		})
     	});
     </script>

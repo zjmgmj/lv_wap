@@ -469,4 +469,56 @@
 .collect_icon_img img {
   width: 1.2rem;
 }
+/*20171105添加*/
+.share_other {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.share_other .sh_mask {
+  width: 100%;
+  max-width: 640px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #000000;
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+  z-index: 99999;
+}
+.share_other ul {
+  width: 100%;
+  max-width: 640px;
+  height: 2rem;
+  padding: 0.5rem 0;
+  position: fixed;
+  bottom: 0;
+  z-index: 999999;
+  background-color: #626060;
+  -webkit-opacity: 0.9;
+  opacity: 0.9;
+}
+.share_other ul li {
+  color: #FFFFFF;
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.share_other ul li p {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin: 0 auto;
+  -webkit-border-radius: 0.7rem;
+  border-radius: 0.7rem;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+.share_other ul li p img {
+  height: 1.4rem;
+}
+.share_other ul li div {
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.6rem;
+}
 /*# sourceMappingURL=detail.css.map */

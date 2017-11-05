@@ -263,13 +263,30 @@
 			</div>
 			<div class="pic_show"></div>
 		</div>
+		<div class="share_other">
+			<div class="sh_mask"></div>
+			<ul>
+				<li>
+					<a href="#">
+						<p><img src="images/weixin.png" /></p>
+						<div>微信</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<p><img src="images/friendshare.png" /></p>
+						<div>朋友圈</div>
+					</a>
+				</li>
+			</ul>
+		</div>
 		<footer class="detail_foot ">
 			<ul class="flex">
 				<li>
 					<img src="images/kefu_1.png" />
 					<p>客服</p>
 				</li>
-				<li>
+				<li class="share_btn_li">
 					<img src="images/icon_shared.png" />
 					<p>分享<span class="orange">+5</span></p>
 				</li>
@@ -279,5 +296,14 @@
 			</ul>
 		</footer>
 	</body>
-
+    <script>
+    	$(function(){
+    		$(".share_btn_li").bind("click",function(){
+    			$(".share_other").show();
+    		});
+    		$(".sh_mask").bind("click",function(){
+    			$(".share_other").hide();
+    		})
+    	});
+    </script>
 </html>

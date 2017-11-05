@@ -1,6 +1,7 @@
 .mycoupon {
   width: 100%;
   height: 100%;
+  padding-bottom: 3rem;
 }
 .mycoupon .coupon-zero {
   width: 100%;
@@ -169,13 +170,13 @@
 .myintegral .integral-get .how-get {
   width: 94%;
   margin: 0 auto;
-  height: 4rem;
+  height: 3rem;
   padding: 0.5rem 0;
 }
 .myintegral .integral-get .how-get li {
-  width: 25%;
+  width: 20%;
   float: left;
-  height: 4rem;
+  height: 3rem;
   text-align: center;
 }
 .myintegral .integral-get .how-get li .get-name,
@@ -190,6 +191,7 @@
 }
 .myintegral .integral-get .how-get li .get-img img {
   height: 1.8rem;
+  max-width: 90%;
   margin-top: 0.1rem;
 }
 .myintegral .integral-get .how-get .signin {
@@ -244,7 +246,8 @@
 .myintegral .integral-edit .integral-duihuan li {
   width: 94%;
   padding: 0.5rem 3%;
-  height: 4rem;
+  height: 100%;
+  overflow: hidden;
   margin-bottom: 0.5rem;
   background-color: #FFFFFF;
   border: 1px solid #efefef;
@@ -258,7 +261,7 @@
   color: #06c1ae;
   height: 4rem;
   line-height: 4rem;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   position: relative;
 }
 .myintegral .integral-edit .integral-duihuan li .integral-left i {
@@ -270,6 +273,19 @@
   line-height: 1rem;
   text-align: center;
   left: 0;
+}
+.myintegral .integral-edit .integral-duihuan li .integral-left em {
+  position: absolute;
+  left: -0.5rem;
+  top: 0;
+  font-size: 0.52rem;
+  height: 1rem;
+  line-height: 1rem;
+  background-color: #06C1AE;
+  color: #FFFFFF;
+  padding: 0 0.3rem;
+  font-style: normal;
+  z-index: 222;
 }
 .myintegral .integral-edit .integral-duihuan li .integral-right {
   width: 70%;
@@ -294,10 +310,6 @@
   font-size: 0.56rem;
   color: #666666;
 }
-.myintegral .integral-edit .integral-duihuan li .integral-right .integral-condition {
-  height: 1.8rem;
-  overflow: hidden;
-}
 .myintegral .integral-edit .integral-detail {
   width: 100%;
   height: 100%;
@@ -306,7 +318,8 @@
 .myintegral .integral-edit .integral-detail li {
   width: 90%;
   padding: 0.5rem 5%;
-  height: 3rem;
+  height: 100%;
+  overflow: hidden;
   background-color: #FFFFFF;
   border-bottom: 1px solid #efefef;
 }
@@ -314,21 +327,15 @@
   width: 80%;
   float: left;
   color: #333333;
-  height: 4rem;
+  height: 100%;
   font-size: 0.7rem;
 }
 .myintegral .integral-edit .integral-detail li .detail-left p {
   width: 100%;
 }
 .myintegral .integral-edit .integral-detail li .detail-left .detail-title {
-  font-size: 0.7rem;
-  height: 1.6rem;
-  line-height: 1.6rem;
-}
-.myintegral .integral-edit .integral-detail li .detail-left .detail-time {
-  color: #999999;
   font-size: 0.6rem;
-  line-height: 1rem;
+  line-height: 1.2rem;
 }
 .myintegral .integral-edit .integral-detail li .detail-right {
   width: 20%;
@@ -337,6 +344,99 @@
   line-height: 3rem;
   font-size: 0.8rem;
   color: #07c1c0;
+}
+.myintegral .duihuan_mask {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: none;
+}
+.myintegral .duihuan_mask .dh_tips {
+  width: 60%;
+  position: fixed;
+  background-color: #FFFFFF;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  left: 20%;
+  top: 30%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  line-height: 1rem;
+  text-align: center;
+  z-index: 999999;
+  display: none;
+}
+.myintegral .duihuan_mask .dh_mask {
+  width: 100%;
+  max-width: 640px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #000000;
+  -webkit-opacity: 0.6;
+  opacity: 0.6;
+  z-index: 99999;
+}
+.myintegral .duihuan_mask .dh_con {
+  width: 512px;
+  left: 64px;
+  height: 5rem;
+  background-color: #FFFFFF;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  position: fixed;
+  top: 50%;
+  margin-top: -4rem;
+  z-index: 99999;
+  overflow: hidden;
+}
+.myintegral .duihuan_mask .dh_con h1 {
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: normal;
+  padding-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+.myintegral .duihuan_mask .dh_con div {
+  width: 100%;
+  height: 1.2rem;
+}
+.myintegral .duihuan_mask .dh_con div span {
+  display: block;
+  width: 20%;
+  margin-left: 20%;
+  float: left;
+  text-align: center;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  color: #FFFFFF;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+}
+.myintegral .duihuan_mask .dh_con div .cancel_btn {
+  background-color: #dddcdc;
+}
+.myintegral .duihuan_mask .dh_con div .sure_btn {
+  background-color: #06C1AE;
+}
+@media screen and (max-width: 640px) {
+  .myintegral .duihuan_mask .dh_con {
+    width: 70%;
+    left: 15%;
+    max-width: 512px;
+    height: 5rem;
+    background-color: #FFFFFF;
+    -webkit-border-radius: 0.25rem;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    margin-top: -4rem;
+    z-index: 99999;
+  }
 }
 .improveinfo {
   width: 100%;

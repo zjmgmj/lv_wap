@@ -106,4 +106,19 @@
   height: 1rem;
   line-height: 1rem;
 }
+.addproduct .product_tips {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+.addproduct .product_tips p {
+  width: 100%;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  color: #999999;
+  margin-bottom: 0.5rem;
+  font-size: 0.6rem;
+}
 /*# sourceMappingURL=addproduct.css.map */

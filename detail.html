@@ -124,7 +124,7 @@
 			</div>
 
 			<div class="content_width bg_white m_top detail_hotel">
-				<ul class="border_bottom">
+				<ul class="border_bottom taocan_ul">
 					<li class="flex">
 						<span>鹰巢旅舍</span>
 						<span><i>￥</i><span class="price">6880</span></span>
@@ -135,7 +135,7 @@
 						<p class="green">套餐说明 ></p>
 					</li>
 				</ul>
-				<ul class="border_bottom">
+				<ul class="border_bottom taocan_ul">
 					<li class="flex">
 						<span>鹰巢旅舍</span>
 						<span><i>￥</i><span class="price">6880</span></span>
@@ -146,6 +146,20 @@
 						<p class="green">套餐说明 ></p>
 					</li>
 				</ul>
+				<div class="taocan_info">
+					<div class="taocan_mask"></div>
+					<div class="taocan_con">
+						<h1>鹰巢旅舍鹰巢旅舍</h1>
+						<p>活动人数：24个孩子，额满即止</p>
+						<p>出行方式：飞机往返，上海出发</p>
+						<p>报名要求：8-12岁孩子，独立出发</p>
+						<div class="taocan_bottom">
+							<span>￥1825</span>
+							<a href="#">立即购买</a>
+						</div>
+						<div class="close"><img src="images/cha.png" /></div>
+					</div>
+				</div>
 			</div>
 
 			<div class="bg_white content_width organizers sold">
@@ -300,7 +314,13 @@
     		});
     		$(".share_friend").bind("click",function(){
     			//分享代码
-    		})
+    		});
+    		$(".taocan_ul").bind("click",function(){
+    			$(".taocan_info").show();
+    		});
+    		$(".taocan_mask,.close").bind("click",function(){
+    			$(".taocan_info").hide();
+    		});
     	});
     </script>
 </html>

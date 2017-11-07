@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>我的勋章</title>
+		<include file="Public/head"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/member.css" />
+	</head>
+
+	<body>
+	<include file="Public/header"/>
+		<div class="myintegral">
+			
+			<div class="integral-get">
+				<div class="integral-tit">
+					<h1><img src="__PUBLIC__/home/images/integral.jpg" /><span>我的勋章</span></h1>
+					 
+				</div>
+				<ul class="how-get">
+				  <volist name='list' id="val">
+					<li>
+						<p class="get-name">{$val.medalid|getMedalName}</p>
+						<p class="get-img"><img src="{$val.medalid|getMedalUrl}"  height="40" width="40" /></p>
+					</li>
+					</volist> 
+				</ul>
+			</div>
+			<div class="integral-edit">
+				<div class="integral-edit-tit">
+					<h1  class="click-left click-current"> <a href="javascript:;">勋章明细</a></h1>
+					 
+				</div>
+				 
+				<ul class="integral-detail" style="display:block">
+					<volist name='user_medals' id="user_medal">
+					<li>
+						<div class="detail-left">
+							<p class="detail-title">{$user_medal['content']}</p>
+							<p class="detail-time" >{$user_medal['addtime']}</p>
+						</div>
+						 
+					</li>
+					</volist>
+				</ul>
+				</if>
+			</div>
+		</div>
+		<!--[if !IE]> -->
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='__PUBLIC__/qwadmin/js/jquery.js'>" + "<" + "/script>");
+		</script>
+		<!-- <![endif]-->
+		<!--[if IE]>
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='__PUBLIC__/qwadmin/js/jquery1x.js'>" + "<" + "/script>");
+		</script>
+		<![endif]-->
+
+		
+	</body>
+
+</html>

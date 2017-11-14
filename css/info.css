@@ -116,14 +116,17 @@ body {
 .travel .T-con .spantext i {
   color: #db998b;
 }
+/*2017-11-13修改*/
 .travel .T-con a {
   display: block;
   float: right;
-  height: 1.4rem;
-  line-height: 1.4rem;
-  margin-top: 0.3rem;
+  padding: 0 0.5rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  margin-top: 0.4rem;
   background-color: #ffa639;
   color: #FFFFFF;
+  font-size: 0.6rem;
   -webkit-border-radius: 0.25rem;
   border-radius: 0.25rem;
 }

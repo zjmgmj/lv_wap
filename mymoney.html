@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的余额</title>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/member.css" />
+		<script src="js/jquery1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header class="detail_header">
+			<div>
+				<ul class="flex">
+					<li class="home"><img src="images/home.png" /></li>
+					<li class="logo">菲 趣</li>
+					<li class="personal"><img src="images/personal.png" /></li>
+				</ul>
+			</div>
+		</header>
+		<div class="mymoney">
+			
+			<div class="my_money">
+				<img src="images/moneybg.jpg" />
+				<div>
+					<span class="yu_e">￥<i>2587</i></span>
+					<span class="div_ch">充值</span>
+				</div>
+			</div>
+			<div class="money-edit">
+				<div class="money-edit-tit">
+					<h1 class="click-left money-click-current"><a href="javascript:;">充值记录</a></h1>
+					<h1 class="click-right"><a href="javascript:;">消费记录</a></h1>
+				</div>
+				<ul class="chongzhi">
+					<li>
+						<div>充值成功，余额<i>555</i>元</div>
+						<p>2017-10-11 22:10:30</p>
+						<span>+100</span>
+					</li>
+					<li>
+						<div>充值成功，余额<i>555</i>元</div>
+						<p>2017-10-11 22:10:30</p>
+						<span>+100</span>
+					</li>
+				</ul>
+				<ul class="xiaofei">
+					<li>
+						<div>新北必胜客 l 揉面团、做披萨、西餐礼仪、DIY奶茶、DIY水果沙拉</div>
+						<p>2017-10-11 22:10:30</p>
+						<span>-100</span>
+					</li>
+					<li>
+						<div>新北必胜客 l 揉面团、做披萨、西餐礼仪、DIY奶茶、DIY水果沙拉</div>
+						<p>2017-10-11 22:10:30</p>
+						<span>-100</span>
+					</li>
+				</ul>
+			</div>
+			<div class="norecord">
+				<i class="icon iconfont icon-kulian"></i>
+				<p>暂无明细</p>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				$(".money-edit-tit h1").bind("click",function(){
+					$(".money-edit-tit h1").removeClass("money-click-current");					
+					$(this).addClass("money-click-current");
+				});
+				$(".click-left").bind("click",function(){
+					$(".chongzhi").show();
+					$(".xiaofei").hide();
+					
+				});
+				$(".click-right").bind("click",function(){
+					$(".chongzhi").hide();
+					$(".xiaofei").show();
+				});
+				
+			});
+		</script>
+	</body>
+
+</html>

@@ -115,9 +115,34 @@
 .index_content .topic_content {
   margin-top: .5rem;
   padding-top: .5rem;
-  border-top: 1px rgba(139, 197, 63, 0.5) solid;
   position: relative;
 }
+/*2017-11-18修改*/
+.index_content .topic_content .recommend_pic {
+  width: 33%;
+  float: left;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+}
+.index_content .topic_content .recommend_pic img {
+  max-width: 90%;
+  height: 2rem;
+}
+.index_content .topic_content .gg_time {
+  width: 33%;
+  height: 2rem;
+  margin-bottom: 1rem;
+  float: left;
+}
+.index_content .topic_content .gg_time .calendarTime {
+  width: 100%;
+  margin: 0;
+  padding: 0.4rem 0;
+}
+.index_content .topic_content .gg_time .calendarTime i {
+  top: 0.4rem;
+}
+/*2017-11-18修改*/
 .index_content .topic_content .iframepage {
   position: absolute;
   top: 2.3rem;

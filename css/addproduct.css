@@ -10,7 +10,6 @@
   width: 94%;
   padding: 0.3rem 3%;
   background-color: #FFFFFF;
-  height: 3rem;
   position: relative;
 }
 .addproduct .addproduct-con .productcon .productcon-left {
@@ -54,6 +53,11 @@
 }
 .addproduct .addproduct-con .productcon .xiala-arrow i {
   color: #06c1ae;
+}
+.addproduct .addproduct-con .productcon:after {
+  clear: both;
+  content: '';
+  display: block;
 }
 .addproduct .addproduct-con .purchase-user {
   width: 100%;
